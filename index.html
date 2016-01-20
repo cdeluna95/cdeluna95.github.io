@@ -1,52 +1,78 @@
 <html>
-    <head>
-        <title>Student Profile</title>
+
+<head>
+    <title>Student Profile</title>
+
+    <style>
+        #header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
         
-            <style>
-                body {
-                    background-color:silver;
-                }
-                ul li {
-                    display:inline;
-                    margin-left:30px;
-                }
-                .container {
-                    background-color:white;
-                    margin-top:30px;
-                    margin-bottom:30px;
-                    margin-left:30px;
-                    margin-right:30px;
-                }
-            </style>
-    </head>
-    
-    <body>
-        <center><h2>Christan de Luna's Page</h2></center>
-        <ul>
-            <font face= "georgia"><b>
-            <li><a href = "aboutme.html">About Me</a></li>
-            <li><a href = "resume.html">Resume</a></li>
-            <li><a href = "projects.html">Projects</a></li>
-            </font></b>
-        </ul>
+        #nav {
+            line-height: 30px;
+            background-color: #eeeeee;
+            height: 300px;
+            width: 100px;
+            float: left;
+            padding: 5px;
+        }
         
-        <div class="container">
-            <font face= "cambria">
-            <h3><b>Welcome!</b></h3>
-            <p>Here's a bunch of pretty pictures.</p>
-            <hr/>
-            <img src = "primordia.jpg" width="600" height="400"/>
-            <img src = "primordia2.jpg" width="600" height="400"/>
-            <img src = "noctilum1.jpg" width="600" height="400"/>
-            <img src = "noctilum2.jpg" width="600" height="400"/>
-            <img src = "noctilum3.jpg" width="600" height="400"/>
-            <img src = "oblivia.jpg" width="600" height="400"/>
-            <img src = "sylvalum.jpg" width="600" height="400"/>
-            <img src = "cauldros.jpg" width="600" height="400"/>
-            <hr/>
-            
-            <sub>Note: Screenshots are from the game <i>Xenoblade Chronicles X.</i></sub>
-            </font>
-        </div>
-    </body>
+        #section {
+            width: 350px;
+            float: left;
+            padding: 10px;
+        }
+        
+        #footer {
+            background-color: black;
+            color: white;
+            clear: both;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Christan de Luna's Page</h1>
+    </div>
+
+    <div id="nav"><font face="palatino linotype"><b>
+        <a href="index.html">Home</a>
+        <br>
+        <a href="aboutme.html">About Me</a>
+        <br>
+        <a href="resume.html">Resume</a>
+        <br>
+        <a href="projects.html">Projects</a>
+        </font></b>
+    </div>
+
+    <div id="section">
+        <h1>Welcome!</h1>
+        <p>Here's a bunch of pretty pictures.</p>
+        </hr>
+
+        <img src="primordia.jpg" width="600" height="400" />
+        <img src="primordia2.jpg" width="600" height="400" />
+        <img src="noctilum1.jpg" width="600" height="400" />
+        <img src="noctilum2.jpg" width="600" height="400" />
+        <img src="noctilum3.jpg" width="600" height="400" />
+        <img src="oblivia.jpg" width="600" height="400" />
+        <img src="sylvalum.jpg" width="600" height="400" />
+        <img src="cauldros.jpg" width="600" height="400" />
+        <hr/>
+
+        <sub>Note: Screenshots are from the game <i>Xenoblade Chronicles X.</i></sub>
+    </div>
+
+    <div id="footer">
+        Something.
+    </div>
+</body>
+
 </html>
