@@ -1,23 +1,92 @@
 <html>
 
 <head>
-    <title>Student Profile</title>
+    <title>Profile: Christan de Luna</title>
 
     <style>
         #header {
-            background-color: black;
+            background-color: #222;
             color: white;
             text-align: center;
             padding: 5px;
         }
         
+        body {
+            padding: 0;
+            margin: 0;
+            overflow-y: scroll;
+            font-family: Palatino Linotype;
+            font-size: 18px;
+        }
+        
         #nav {
-            line-height: 30px;
-            background-color: #eeeeee;
-            height: 550px;
-            width: 100px;
-            float: left;
-            padding: 5px;
+            background-color: #222;
+        }
+        
+        #nav_wrapper {
+            width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        
+        #nav ul li {
+            display: inline-block;
+        }
+        
+        #nav ul li: hover {
+            background-color: #333;
+        }
+        
+        #nav ul li img {
+            vertical-align: middle;
+            padding-left: 2px;
+        }
+        
+        #nav ul li a,
+        visited {
+            color: #ccc;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+        }
+        
+        #nav ul li a:hover {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        #nav ul li:hover ul {
+            display: block;
+        }
+        
+        #nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #222;
+            border: 2px solid #222;
+            border-top: 0;
+            margin-left: 10px;
+            min-width: 100px;
+        }
+        
+        #nav ul ul li {
+            display: block;
+        }
+        
+        #nav ul ul li a,
+        visited {
+            color: #ccc;
+        }
+        
+        #nav ul ul li a:hover {
+            color: #099;
         }
         
         #section {
@@ -28,45 +97,51 @@
         }
         
         #footer {
-            background-color: black;
+            background-color: #222;
             color: white;
             clear: both;
             text-align: center;
             padding: 5px;
         }
     </style>
+
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+
+    <body>
+        <div id="header">
+            <h1>Christan de Luna's Page</h1>
+        </div>
+
+        <div id="nav">
+            <div id="nav_wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="aboutme.html">About Me <img src ="arrow.png" /></a>
+                        <ul>
+                            <li><a href="aboutmeeng.html">English</a></li>
+                            <li><a href="aboutmefil.html">Filipino</a></li>
+                            <li><a href="aboutmechav.html">Chavacano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pictures.html">Pictures</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="section">
+            <h1>Welcome!</h1>
+            <img src="newlosangeles.jpg" width="700" height="400" />
+            </hr>
+        </div>
+
+        <div id="footer">
+            Created by cdeluna
+        </div>
+    </body>
 </head>
-
-<body>
-    <div id="header">
-        <h1>Christan de Luna's Page</h1>
-    </div>
-
-    <div id="nav"><font face="palatino linotype"><b>
-        <font size="4"><b>Menu</b></font>
-        <br>
-        <a href="index.html">Home</a>
-        <br>
-        <a href="aboutme.html">About Me</a>
-        <br>
-        <a href="pictures.html">Pictures</a>
-        <br>
-        <a href="resume.html">Resume</a>
-        <br>
-        <a href="projects.html">Projects</a>
-        </font>
-        </b>
-    </div>
-
-    <div id="section">
-        <h1>Welcome!</h1>
-        <img src="newlosangeles.jpg" width="700" height="400" />
-        </hr>
-    </div>
-
-    <div id="footer">
-        Created by cdeluna
-    </div>
-</body>
 
 </html>
