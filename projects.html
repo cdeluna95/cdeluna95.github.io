@@ -1,14 +1,12 @@
 <html>
 
 <head>
-    <title>Student Profile</title>
+    <title>Student Profile: Christan de Luna</title>
 
     <style>
         #header {
             background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 5px;
+            padding: 1px;
         }
         
         body {
@@ -16,7 +14,7 @@
             margin: 0;
             overflow-y: scroll;
             font-family: Palatino Linotype;
-            font-size: 16px;
+            font-size: 14px;
         }
         
         #nav {
@@ -40,7 +38,7 @@
             display: inline-block;
         }
         
-        #nav ul li: hover {
+        #nav ul li:hover {
             background-color: #333;
         }
         
@@ -53,7 +51,7 @@
         visited {
             color: #ccc;
             display: block;
-            padding: 15px;
+            padding: 10px;
             text-decoration: none;
         }
         
@@ -69,10 +67,11 @@
         #nav ul ul {
             display: none;
             position: absolute;
-            background-color: #222;
-            border: 2px solid #222;
-            border-top: 0;
-            margin-left: 10px;
+            background-color: #ccc;
+            border: 3px solid #ccc;
+            border-top: 3px solid #145;
+            border-bottom: 3px solid #145;
+            margin-left: -3px;
             min-width: 100px;
         }
         
@@ -82,18 +81,19 @@
         
         #nav ul ul li a,
         visited {
-            color: #ccc;
+            color: #333;
         }
         
         #nav ul ul li a:hover {
-            color: #098;
+            background-color: #cbb;
+            color: #145;
         }
         
         #section {
             display: inline-block;
-            width: 350px;
+            width: 1000px;
             float: left;
-            padding: 10px;
+            text-indent: 40px;
         }
         
         #footer {
@@ -107,24 +107,24 @@
 
     <body>
         <div id="header">
-            <h1>Christan de Luna's Page</h1>
+            <a href="index.html"><img src = "primordiabanner.png" width="1200" height="250"/></a>
         </div>
 
-        <div id="nav">
+       <div id="nav">
             <div id="nav_wrapper">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>
-                        <a href="aboutme.html">About Me <img src ="arrow.png" /></a>
+                        <a href="aboutmeeng.html">About Me <img src ="arrow.png" /></a>
                         <ul>
                             <li><a href="aboutmeeng.html">English</a></li>
                             <li><a href="aboutmefil.html">Filipino</a></li>
                             <li><a href="aboutmechav.html">Chavacano</a></li>
                         </ul>
                     </li>
-                    <li><a href="pictures.html">Pictures</a></li>
-                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="pictures.html">Pictures</a></li>
                     </li>
                 </ul>
             </div>
@@ -134,14 +134,16 @@
             <div class="section">
                 <h3><strong>Projects</strong></h3>
                 <hr/>
+                <ul>
                 <li>GitHub</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>HTML/CSS</li>
+                <li>Ruby on Rails</li>
+                </ul>
             </div>
 
-            <div id="footer">
-                Created by cdeluna
-            </div>
+        <div id="footer">
+            Created by cdeluna.
+        </div>
         </body>
 </head>
 
