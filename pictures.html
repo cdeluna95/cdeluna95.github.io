@@ -1,31 +1,140 @@
 <html>
 
 <head>
-    <title>Pictures</title>
+    <title>Student Profile</title>
 
-    <style>
+       <style>
+        #header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        
         body {
-            background-color: silver;
+            padding: 0;
+            margin: 0;
+            overflow-y: scroll;
+            font-family: Palatino Linotype;
+            font-size: 16px;
         }
         
-        ul li {
-            display: inline;
-            margin-left: 30px;
+        #nav {
+            background-color: #222;
         }
         
-        #container {
-            background-color: silver;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-left: 30px;
-            margin-right: 30px;
+        #nav_wrapper {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        
+        #nav ul li {
+            display: inline-block;
+        }
+        
+        #nav ul li: hover {
+            background-color: #333;
+        }
+        
+        #nav ul li img {
+            vertical-align: middle;
+            padding-left: 2px;
+        }
+        
+        #nav ul li a,
+        visited {
+            color: #ccc;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+        }
+        
+        #nav ul li a:hover {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        #nav ul li:hover ul {
+            display: block;
+        }
+        
+        #nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #222;
+            border: 2px solid #222;
+            border-top: 0;
+            margin-left: 10px;
+            min-width: 100px;
+        }
+        
+        #nav ul ul li {
+            display: block;
+        }
+        
+        #nav ul ul li a,
+        visited {
+            color: #ccc;
+        }
+        
+        #nav ul ul li a:hover {
+            color: #098;
+        }
+        
+        #section {
+            display: inline-block;
+            width: 350px;
+            float: left;
+            padding: 10px;
+        }
+        
+        #footer {
+            background-color: #222;
+            color: white;
+            clear: both;
+            text-align: center;
+            padding: 5px;
         }
     </style>
 </head>
 
-<body>
 
-    <div class="container">
+<body>
+    
+        <body>
+        <div id="header">
+            <h1>Christan de Luna's Page</h1>
+        </div>
+        
+                <div id="nav">
+            <div id="nav_wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="aboutme.html">About Me <img src ="arrow.png" /></a>
+                        <ul>
+                            <li><a href="aboutmeeng.html">English</a></li>
+                            <li><a href="aboutmefil.html">Filipino</a></li>
+                            <li><a href="aboutmechav.html">Chavacano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pictures.html">Pictures</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="section">
         <font face="cambria">
             <h3>Welcome!</h3>
             <p>Here's a bunch of pretty pictures.</p>
@@ -43,6 +152,12 @@
             <sub>Note: Screenshots are from the game <i>Xenoblade Chronicles X.</i></sub>
             </font>
     </div>
+    
+        <div id="footer">
+            Created by cdeluna
+        </div>
+    </body>
+    
 </body>
 
 </html>
