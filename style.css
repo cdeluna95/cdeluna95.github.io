@@ -12,6 +12,12 @@
             font-size: 16px;
         }
         
+        .general-hr {
+            margin: 0 0 30px 0;
+            border-bottom: 1px solid #3b3a35;
+            color: #500;
+        }
+        
         #nav {
             background-color: #005555;
         }
