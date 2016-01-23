@@ -84,8 +84,34 @@
             color: #145;
         }
         
-        #section {
+        table {
+            width: 100%;
+        }
+        
+        td {
+            vertical-align: top;
+        }
+        
+        .title {
             background-color: #c2fdf3;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        
+        .youtube-player {
+            text-align: right;
+            padding: 20px;
+        }
+        
+        .main-image {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .copy,
+        .youtube-player {
+            white-space: nowrap;
         }
         
         #footer {
