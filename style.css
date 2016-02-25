@@ -106,7 +106,14 @@
         }
         
         .youtube-player {
-            text-align: right;
+            position: absolute;
+            left: 0px;
+            padding: 20px;
+        }
+        
+        .youtube-player2 {
+            position: absolute;
+            right: 0px;
             padding: 20px;
         }
         
