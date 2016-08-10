@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+
+/* General styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navbar and navigation styles */
+
+.navbar {
+  font-family: 'Vollkorn', regular;
+  font-size: 20px;
+  text-transform: lowercase;
+  letter-spacing: 1.0px;
+}
+
+.navbar-default {
+  border: 0;
+	padding-top: 30px;
+}
+
+.navbar-default .navbar-brand {
+  color: #35586C;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 2.0px;
+  margin-top: -2px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #87CEEB;
+  margin-top: -5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+  color: #87CEEB;
+  margin-top: -5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #87CEEB;
+}
+
+/* Main page styles */
+
+.jumbotron {
+  background-color: #ffffff;
+  margin: 0px 120px 0px 120px;
+}
+
+.main-page {
+  text-align: center;
+}
+
+.main-page > img {
+  width: 70%;
+  height: 450px;
+  transition: 1s ease;
+}
+
+.main-page img:hover {
+  transform: rotateZ(5deg);
+}
+
+/* About styles */
+
+.about-header > .about-title {
+  position: relative;
+  bottom: 1em;
+  text-align: left;
+  font-size: 3.2em;
+  font-weight: bolder;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  width: 15em;
+}
+
+.about-header > p {
+  position: relative;
+  margin-right: 29em;
+  float: left;
+  bottom: 40px;
+  font-size: 16px;
+}
+
+.about-image > img {
+  position: relative;
+  float: right;
+  right: 2em;
+  bottom: 28em;
+  max-width: 100%;
+  height: 500px;
+  margin-bottom: -500px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px 5px #ccc;
+}
+
+/* Projects styles */
+
+.project-header {
+  text-align: center;
+  margin: -50px 0px 50px 0px;
+  border-bottom: 1px solid #87CEEB;
+  padding-bottom: 20px;
+}
+
+.project-header > .project-title {
+  font-size: 3.2em;
+  font-weight: bolder;
+  margin-bottom: -15px;
+}
+
+.project-header > .project-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  color: #808080;
+  margin-bottom: 25px;
+}
+
+.project-image > a > img {
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+	margin-bottom: 40px;
+  width: 450px;
+  height: 240px;
+}
+
+.project-description {
+  float: left;
+  margin-left: -100px;
+}
+
+.project-content > p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/* Stuff styles */
+
+.gallery-header {
+  text-align: center;
+  margin: -50px 0px 50px 0px;
+}
+
+.gallery-header > .gallery-title {
+  font-size: 3.2em;
+  font-weight: bolder;
+  margin-bottom: -15px;
+}
+
+.gallery-header > .gallery-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  color: #808080;
+  margin-bottom: 25px;
+}
+
+.gallery-header > .gallery-buttons {
+  border-bottom: 1px solid #87CEEB;
+  padding-bottom: 40px;
+}
+
+.btn-primary {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+  color: #FF3030;
+  background-color: #fff;
+  border-color: #FF3030;
+  border-radius: 15px;
+  margin: 0px 10px 0px 10px;
+}
+
+.btn-primary:hover {
+  background-color: #FF3030;
+  border-color: #FF3030;
+  transition: 0.5s ease;
+}
+
+/* Xenoblade styles */
+
+.xenoblade-wrapper > a > img {
+  box-sizing: border-box;
+  background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 3px 3px 4px 4px #ccc;
+	padding: 0.6em 0.6em;
+	margin-bottom: 40px;
+	height: 210px;
+	width: 360px;
+	transition: all 0.5s ease;
+}
+
+.xenoblade-wrapper img:hover {
+  transform: scale(1.3);
+}
+
+/* Kirby styles */
+
+.kirbymation-wrapper > a > img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 5px #ccc;
+  margin: 0px 0px 40px 30px;
+  transition: all 2s ease;
+}
+
+.kirbymation-wrapper img:hover {
+  transform: rotateZ(-360deg);
+}
+
+.kirbymation-resize {
+  width: 175px;
+  height: 100px;
+}
+
+.kirbymage-wrapper > a > img {
+  box-sizing: border-box;
+  background-color: #fff;
+	border-radius: 50px;
+	box-shadow: 3px 3px 5px 5px #ccc;
+	padding: 3px 3px;
+  margin: 0px 0px 40px 60px;
+  transition: all 0.2s ease;
+}
+
+.kirbymage-wrapper img:hover {
+  transform: scale(1.3);
+}
+
+.kirbymage-resize {
+  max-width: 210px;
+  max-height: 100%;
+}
+
+/* Brawl styles */
+
+.brawl-wrapper > a > img {
+  box-sizing: border-box;
+  background-color: #fff;
+	box-shadow: 3px 3px 8px 8px #ccc;
+	padding: 0.8em 0.8em;
+	margin: 0px 0px 40px 0px;
+	width: 252px;
+	height: 252px;
+	transition: all 1s ease;
+}
+
+.brawl-wrapper img:hover {
+  border-radius: 50%;
+}

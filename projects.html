@@ -1,68 +1,76 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+  
 <head>
-    <meta charset="UTF-8">
-    <title>Projects</title>
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn">
+  <title>Christan de Luna - Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+  <link type="text/css" rel="stylesheet" href="custom.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <center>
-            <a href="index.html"><img src="images/primordiabanner.png" width="1200" height="250" /></a>
-        </center>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Christan de Luna</a>
+      </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://linkedin.com/in/christan-de-luna"><img src="images/linkedin.png" title="LinkedIn"></a></li>
+        <li><a href="https://github.com/cdeluna95"><img src="images/github.png" title="GitHub"></a></li>
+        <li><a href="mailto:cjdeluna95@gmail.com"><img src="images/email.png" title="Gmail"></a></li>
+      </ul>
     </div>
-
-    <div id="nav">
-        <div id="nav_wrapper">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="abouteng.html">About<img src ="images/arrow.png" /></a>
-                    <ul>
-                        <li><a href="abouteng.html">English</a></li>
-                        <li><a href="aboutspan.html">Spanish</a></li>
-                        <li><a href="aboutfil.html">Filipino</a></li>
-                        <li><a href="aboutchav.html">Chavacano</a></li>
-                    </ul>
-                </li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="pictures.html">Pictures</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </li>
-            </ul>
-        </div>
+  </nav>
+  
+  <div class="jumbotron">
+    <div class="project-header">
+      <h1 class="project-title">Projects</h1>
+      <h2 class="project-subtitle">Thangs I deed</h2>
     </div>
-
-    <div class="section">
-        <ul>
-            <h3><strong>Projects</strong></h3>
-            <li>
-                <a href="https://github.com/Kenjacau/STARGAME.git"><img src="images/superelitespaceadventurelogo.png" /></a> *
-            </li>
-            <li>
-                <a href="https://dashboard.heroku.com/apps"><img src="images/herokulogo.png" /></a>
-            </li>
-            <ul>
-                <li><a href="https://cdelunavisualapp.herokuapp.com">Visual App</a></li>
-                <li><a href="https://cdelunamylinks-onrails.herokuapp.com">YouTube Link Sharer</a></li>
-                <li><a href="https://cdelunasampleapp.herokuapp.com">Sample App</a></li>
-            </ul>
-            <li>
-                <a href="https://cdeluna95.github.io"><img src="images/cdelunawebsitelogo.png" /></a>
-            </li>
-        </ul>
-        <hr/>
-
-        <sub>* Requires <a href="https://www.eclipse.org/downloads/packages/eclipse-ide-eclipse-committers-451/mars1">Eclipse</a> to run</sub>
+    <div class="row">
+      <div class="col-md-6">
+        <span class="project-image">
+          <a href="http://cdeluna95.github.io"><img src="images/projects/cheebsite.png"></a>
+        </span>
+      </div>
+      <div class="col-md-6">
+        <span class="project-description">
+          <h3>Personal Website</h3>
+          <a href="cdeluna95.github.io">cdeluna95.github.io</a>
+          <span class="project-content">
+            <p><strong>Languages</strong>: HTML, CSS</p>
+            <p>Used existing knowledge of HTML and CSS to build a personal website through GitHub.</p>
+          </span>
+        </span>
+      </div>
     </div>
-
-    <div id="footer">
-        Created by cdeluna.
+    <div class="row">
+      <div class="col-md-6">
+        <span class="project-image">
+          <a href="https://cdeluna95.github.io"><img src="images/projects/todolist.png"></a>
+        </span>
+      </div>
+      <div class="col-md-6">
+        <span class="project-description">
+          <h3>To Do List</h3>
+          <a href="https://walnut-beak.hyperdev.space">walnut-beak.hyperdev.space</a>
+          <span class="project-content">
+            <p><strong>Languages</strong>: HTML, JavaScript</p>
+            <p>Used various function and object callings to allow the user to add, change, delete, or toggle to do lists.</p>
+          </span>
+        </span>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
