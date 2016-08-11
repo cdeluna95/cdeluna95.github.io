@@ -132,15 +132,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-image > a > img {
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  background-color: #E0E0E0;
+	border-radius: 10px;
+	padding: 1px 1px;
 	margin-bottom: 40px;
-  width: 450px;
+  width: 480px;
   height: 240px;
+  transition: 0.2s ease;
+}
+
+.project-image img:hover {
+  box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
 }
 
 .project-description {
   float: left;
-  margin-left: -100px;
+  margin-left: -70px;
 }
 
 .project-content > p {
