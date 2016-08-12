@@ -54,25 +54,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #87CEEB;
 }
 
-/* Main page styles */
+/* Index styles */
 
 .jumbotron {
   background-color: #ffffff;
   margin: 0px 120px 0px 120px;
 }
 
-.main-page {
+.jumbotron-custom {
+  background-color: #DEDEDE;
+  color: #000;
+  clear: both;
   text-align: center;
-}
-
-.main-page > img {
-  width: 70%;
-  height: 450px;
-  transition: 1s ease;
-}
-
-.main-page img:hover {
-  transform: rotateZ(5deg);
+  padding: 100px;
+  margin: 100px 0px 0px 0px;
 }
 
 /* About styles */
@@ -157,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
 }
 
-/* Stuff styles */
+/* Gallery styles */
 
 .gallery-header {
   text-align: center;
@@ -181,6 +176,52 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-header > .gallery-buttons {
   border-bottom: 1px solid #87CEEB;
   padding-bottom: 40px;
+}
+
+.gallery-image1 > a > img {
+  position: absolute;
+  margin: 30em 0em 0em 30em;
+  transform: rotate(5deg);
+}
+
+.gallery-image2 > a > img {
+  position: absolute;
+  margin: 20em 0em 20em 65em;
+  transform: rotate(20deg);
+}
+
+.gallery-image3 > a > img {
+  position: absolute;
+  box-shadow: 2px 2px 4px 4px #ccc;
+  margin: 0em 0em 0em 55em;
+  transform: rotate(10deg);
+}
+
+.gallery-image4 > a > img {
+  position: absolute;
+  margin: 40em 0em 0em 45em;
+  transform: rotate(2deg);
+}
+
+.gallery-image5 > a > img {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #fff;
+	box-shadow: 3px 3px 4px 4px #ccc;
+	padding: 0.4em 0.4em;
+  transform: rotate(-5deg);
+}
+
+.gallery-image6 > a > img {
+  position: absolute;
+  margin: 0em 0em 0em 35em;
+  transform: rotate(5deg);
+}
+
+.gallery-image7 > a > img {
+  position: absolute;
+  margin: 20em 0em 0em 0em;
+  transform: rotate(-10deg);
 }
 
 .btn-primary {
@@ -271,16 +312,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .brawl-wrapper img:hover {
   border-radius: 50%;
-}
-
-/* Footer styles */
-
-.footer {
-  display: inline-block;
-  margin-left: 40em;
-  padding: 100px 0px 50px 0px;
-}
-
-.footer-contact > a > img {
-  margin: 0px 30px 0px 30px;
 }
