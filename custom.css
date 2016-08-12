@@ -272,3 +272,15 @@ h1, h2, h3, h4, h5, h6 {
 .brawl-wrapper img:hover {
   border-radius: 50%;
 }
+
+/* Footer styles */
+
+.footer {
+  display: inline-block;
+  margin-left: 40em;
+  padding: 100px 0px 50px 0px;
+}
+
+.footer-contact > a > img {
+  margin: 0px 30px 0px 30px;
+}
