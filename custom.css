@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+p + ul {
+  margin-top: -40px;
+}
+
 /* Navbar and navigation styles */
 
 .navbar {
@@ -61,13 +65,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 120px 0px 120px;
 }
 
-.jumbotron-custom {
-  background-color: #DEDEDE;
-  color: #000;
-  clear: both;
+.index-header > .index-desc {
+  margin: 150px 0em 0px 0em;
+  font-family: 'Vollkorn', regular;
+  font-style: italic;
   text-align: center;
-  padding: 100px;
-  margin: 100px 0px 0px 0px;
+  word-spacing: 3px;
+}
+
+.index-header > ul > li {
+  display: inline-block;
+  margin: 70px 10px 0px 20px;
+}
+
+.index-contact {
+  margin: 0px 0px 0px 55rem;
 }
 
 /* About styles */
@@ -86,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
 .about-header > p {
   position: relative;
   margin-right: 29em;
-  float: left;
   bottom: 40px;
   font-size: 16px;
 }
