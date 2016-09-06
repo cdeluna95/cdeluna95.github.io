@@ -1,57 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Christan de Luna - About</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-  <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-  <link type="text/css" rel="stylesheet" href="custom.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	<head>
+	  <!-- Required -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Details -->
+		<meta name="description" property="og:description" content="Portfolio of Christan de Luna.">
+    <meta name="keywords" property="og:keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" property="og:author" content="Christan de Luna">
+    <title>Christan de Luna • Front-End &amp; Web Designer Aspirant</title>
+    <!-- Links and scripts -->
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Ajax and CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!-- Smooth scrolling-->
+		<script>
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+	  </script>
+	</head>
+	
+	<body>
+	  <!-- Navigation bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="index.html">Christan de Luna</a>
+          <a href="#index" class="navbar-left"><img src="images/cdelunalogo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://linkedin.com/in/christan-de-luna"><img src="images/linkedin.png" title="LinkedIn"></a></li>
-          <li><a href="https://github.com/cdeluna95"><img src="images/github.png" title="GitHub"></a></li>
-          <li><a href="mailto:cjdeluna95@gmail.com"><img src="images/email.png" title="Gmail"></a></li>
-        </ul>
+    </nav>
+      
+    <!-- Index -->
+    <div id="page-one">
+      <a id="index" class="index"></a>
+      <div class="container">
+        <div class="page-one-block">
+          <h1 class="page-one-title">
+            I&#39;m <em>Christan de Luna</em>. Front-End Developer and Web Designer Aspirant learning and aiming to deliver responsive web design.
+          </h1>
+        </div>
       </div>
     </div>
-  </nav>
-
-  <div class="jumbotron-fluid">
-    <div class="index-header">
-      <h3 class="index-desc">
-        I'm <strong>Christan de Luna</strong>. Software and Web Developer Aspirant<br>
-        learning and aiming to deliver responsive web design.
-      </h3>
-      <ul class="index-contact">
-        <li><a href="http://linkedin.com/in/christan-de-luna"><img src="images/linkedin.png" title="LinkedIn"></a></li>
-        <li><a href="https://github.com/cdeluna95"><img src="images/github.png" title="GitHub"></a></li>
-        <li><a href="mailto:cjdeluna95@gmail.com"><img src="images/email.png" title="Gmail"></a></li>
-      </ul>
+    
+    <!-- About -->
+    <div id="page-two">
+      <a id="about" class="about"></a>
+      <div class="container">
+        <img class="page-two-img" src="images/cheeb.jpg">
+        <div class="page-two-block">
+          <div class="page-two-para">
+            <p>Hi, I'm Christan! Or preferably Christian, with the letter I. I also go by <em>Cheeb</em>, <em>ChibiIceClimberz</em>, or
+            <em>Ch33bDragonite</em> if you know me online! Just look me up! :D<br><br>
+            I'm currently in my fourth year at Georgia Gwinnett College studying Information Technology with an emphasis in Software Development. 
+            Right now, I'm seeking internships that'll help me sharpen my knowledge, skills, and abilities in the field of front-end development
+            and web design. I want to learn and the best coding practices and standards available, as well as give myself exposure to a professional 
+            environment.<br><br>
+            When I'm not coding, I draw, watch YouTube videos, play video games, and work out!</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</body>
-
+    
+    <!-- Projects -->
+    <div id="page-three">
+      <a id="projects" class="projects"></a>
+      <div class="container">
+        <!-- Personal Website -->
+        <div class="row">
+          <div class="project-content">
+            <div class="col-md-8">
+              <a href="https://cdeluna95.github.io"><img src="images/cheebsite.png" class="project-image"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="project-desc">
+                <a href="https://cdeluna95.github.io">cdeluna95.github.io</a><br><br>
+                <p><strong>Technologies</strong>: HTML, CSS, Bootstrap<br><br>
+                My personal website. What else is there to say?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- To Do List -->
+        <div class="row">
+          <div class="project-content">
+            <div class="col-md-8">
+              <a href="https://walnut-beak.hyperdev.space"><img src="images/todolist.png" class="project-image"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="project-desc">
+                <a href="https://walnut-beak.hyperdev.space">walnut-beak.hyperdev.space</a><br><br>
+                <p><strong>Technologies</strong>: HTML, JavaScript<br><br>
+                Add, change, delete, or toggle things on a very simple to do list.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- YouTube Link Sharer -->
+        <div class="row">
+          <div class="project-content">
+            <div class="col-md-8">
+              <a href="https://cdelunamylinks-onrails.herokuapp.com"><img src="images/youtubelinksharer.png" class="project-image"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="project-desc">
+                <a href="https://cdelunamylinks-onrails.herokuapp.com">cdelunamylinks-onrails.herokuapp.com</a><br><br>
+                <p><strong>Technologies</strong>: Ruby on Rails, HTML, CSS, Bootstrap<br><br>
+                Upload YouTube videos—or any link really—and add comments!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Visual App -->
+        <div class="row">
+          <div class="project-content">
+            <div class="col-md-8">
+              <a href="https://cdelunavisualapp.herokuapp.com"><img src="images/visualapp.png" class="project-image"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="project-desc">
+                <a href="https://cdelunavisualapp.herokuapp.com">cdelunavisualapp.herokuapp.com</a><br><br>
+                <p><strong>Technologies</strong>: Ruby on Rails, HTML, CSS, JavaScript (jQuery), Bootstrap<br><br>
+                Upload your favorite drawing—or any image really—and rate them!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Super Elite: Space Adventure! -->
+        <div class="row">
+          <div class="project-content">
+            <div class="col-md-8">
+              <a href="https://github.com/Kenjacau/STARGAME"><img src="images/superelitespaceadventure.png" class="project-image"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="project-desc">
+                <a href="https://github.com/Kenjacau/STARGAME">github.com/Kenjacau/STARGAME</a><br><br>
+                <p><strong>Technologies</strong>: Java<br><br>
+                Explore planets as you beat enemies and bosses along your way! In text form!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Gallery -->
+    <div id="page-four">
+      <a id="gallery" class="gallery"></a>
+      <div class="container">
+        <div class="gallery-content">
+          <a href="http://imgur.com/a/sX8lS"><img src="images/formulaoblivia.jpg" class="formula-oblivia"></a><a href="http://imgur.com/a/sX8lS"><img src="images/formuladivine.jpg" class="formula-divine"></a>
+          <a href="http://tinypic.com/a/26xzk/2"><img src="images/darkmetaknight.jpg" class="dark-meta-knight"></a><a href="http://tinypic.com/a/26xzk/2"><img src="images/missingnotoonlink.jpg" class="missingno-toon-link"></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <p>By Christan de Luna. Site under construction.</p>
+    </footer>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>

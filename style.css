@@ -1,0 +1,263 @@
+/* Global fonts */
+
+@import 'https://fonts.googleapis.com/css?family=Belgrano';
+@import 'https://fonts.googleapis.com/css?family=Simonetta';
+@import 'https://fonts.googleapis.com/css?family=Overlock';
+
+/* General styles */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  animation: fadein 3s;
+  color: #f0f0f0;
+  font-family: 'Overlock', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Simonetta', cursive;
+  font-weight: bold;
+	text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	display: inline-block;
+}
+
+p {
+  color: #4f4f4f;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: inline-block;
+}
+
+/* Navigation styles */
+
+.navbar {
+  background: rgba(0, 0, 0, 0.4);
+  border: 0;
+}
+
+.navbar-default .navbar-toggle, .navbar-collapse {
+	border: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f0f0f0;
+	transition: 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-left img {
+  margin: 13px 0 0 50px;
+	transition: 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #f0f0f0;
+  font-family: 'Belgrano', serif;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	margin-left: 30px;
+	transition: 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus  {
+	background-color: #63b8ff;
+	transition: 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-left img:hover,
+.navbar-default .navbar-left img:focus {
+	color: #63b8ff;
+  transform: scale(1.35);
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+  color: #63b8ff;
+  transition: 0.15s ease-in-out;
+}
+
+/* Page one styles */
+
+#page-one {
+  height: 100%;
+  background: url(images/primordiawall.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-one-block {
+	text-align: center;
+}
+
+.page-one-title {
+	margin-top: 3em;
+}
+
+/* Page two styles */
+
+#page-two {
+  background: #d1eeee;
+}
+
+.page-two-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 8em;
+  max-width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px 2px #ccc;
+}
+
+.page-two-block {
+  text-align: center;
+}
+
+.page-two-para {
+	margin-top: 3em;
+}
+
+/* Page three styles */
+
+#page-three {
+  background: #ffdab9;
+}
+
+.project-content {
+  margin-top: 5em;
+}
+
+.project-image {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 2px 6px 2px #ccc;
+  padding: 0.6em 0.6em;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease;
+}
+
+.project-image:hover {
+  box-shadow: 3px 5px 8px rgba(0,0,0,0.3);
+}
+
+.project-desc, project-desc p {
+  font-size: 18px;
+  margin-top: 1em;
+}
+
+/* Page four styles */
+
+#page-four {
+  height: 150%;
+  background: url(images/noctilumwall.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery-content {
+  text-align: center;
+  margin-top: 10em;
+}
+
+.formula-oblivia, .formula-divine, .dark-meta-knight, .missingno-toon-link {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 2px 2px 10px 1px #303030;
+  padding: 0.6em 0.6em;
+}
+
+.formula-oblivia, .formula-divine {
+  width: 50%;
+  height: 50%;
+}
+
+.dark-meta-knight, .missingno-toon-link {
+  width: 30%;
+  height: 30%;
+}
+
+.formula-oblivia, .missingno-toon-link {
+  transform: rotate(-5deg);
+}
+
+.formula-divine, .dark-meta-knight {
+  margin-top: 5em;
+  transform: rotate(5deg);
+}
+
+/* Footer styles */
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 100%;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+.footer p {
+  color: #5e5e5e;
+  font-size: 20px;
+	font-weight: bold;
+	padding-top: 1em;
+}
+
+/* Media queries */
+
+/* Hi-res laptops and desktops */
+@media screen and (max-width: 135em) {
+  .page-one-title { font-size: 55px; width: 65%; }
+  #page-two { height: 150%; }
+  .page-two-para p { font-size: 150%; width: 50%; }
+  #page-three { height: 360%; } }
+/* Big landscape tablets, laptops, and desktops */
+@media screen and (max-width: 120em) {
+  .page-one-title { font-size: 50px; width: 70%; }
+  #page-two { height: 150%; }
+  .page-two-para p { font-size: 150%; width: 60%; }
+  #page-three { height: 360%; } }
+/* Tablets, landscape iPads */
+@media screen and (max-width: 105em) {
+  .page-one-title { font-size: 50px; width: 75%; }
+  #page-two { height: 160%; }
+  .page-two-para p { font-size: 150%; width: 70%; }
+  #page-three { height: 360%; } }
+/* Portrait tablets, landscape e-readers */
+@media screen and (max-width: 85.375em) {
+  .page-one-title { font-size: 45px; width: 80%; }
+  #page-two { height: 170%; }
+  .page-two-para p { font-size: 150%; width: 65%; }
+  #page-three { height: 370%; } }
+/* Portrait E-readers */
+@media screen and (max-width: 60em) {
+  .page-one-title { font-size: 40px; width: 90%; }
+  #page-two { height: 200%; }
+  .page-two-para p { font-size: 150%; width: 70%; }
+  #page-three { height: 380%; } }
+/* Smartphones */
+@media screen and (max-width: 40em) {
+  .page-one-title { font-size: 35px; width: 100%; }
+  #page-two { height: 250%; }
+  .page-two-para p { font-size: 150%; width: 100%; }
+  #page-three { height: 390%; } }
+  /* iPhones */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+  .page-one-title { font-size: 35px; width: 100%; }
+  #page-two { height: 250%; }
+  .page-two-para p { font-size: 150%; width: 100%; }
+  #page-three { height: 400%; } }
+  
+/* Keyframes */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
