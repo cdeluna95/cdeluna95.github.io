@@ -227,7 +227,7 @@ p {
   .page-one-title { font-size: 50px; width: 75%; }
   #page-two { height: 160%; }
   .page-two-para p { font-size: 150%; width: 70%; }
-  #page-three { height: 300%; } }
+  #page-three { height: 320%; } }
 /* Portrait tablets, landscape e-readers */
 @media screen and (max-width: 85.375em) {
   .page-one-title { font-size: 45px; width: 80%; }
