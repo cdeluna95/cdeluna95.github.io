@@ -215,25 +215,25 @@ p {
   .page-one-title { font-size: 55px; width: 65%; }
   #page-two { height: 150%; }
   .page-two-para p { font-size: 150%; width: 50%; }
-  #page-three { height: 360%; } }
+  #page-three { height: 270%; } }
 /* Big landscape tablets, laptops, and desktops */
 @media screen and (max-width: 120em) {
   .page-one-title { font-size: 50px; width: 70%; }
   #page-two { height: 150%; }
   .page-two-para p { font-size: 150%; width: 60%; }
-  #page-three { height: 360%; } }
+  #page-three { height: 280%; } }
 /* Tablets, landscape iPads */
 @media screen and (max-width: 105em) {
   .page-one-title { font-size: 50px; width: 75%; }
   #page-two { height: 160%; }
   .page-two-para p { font-size: 150%; width: 70%; }
-  #page-three { height: 360%; } }
+  #page-three { height: 300%; } }
 /* Portrait tablets, landscape e-readers */
 @media screen and (max-width: 85.375em) {
   .page-one-title { font-size: 45px; width: 80%; }
   #page-two { height: 170%; }
   .page-two-para p { font-size: 150%; width: 65%; }
-  #page-three { height: 370%; } }
+  #page-three { height: 340%; } }
 /* Portrait E-readers */
 @media screen and (max-width: 60em) {
   .page-one-title { font-size: 40px; width: 90%; }
