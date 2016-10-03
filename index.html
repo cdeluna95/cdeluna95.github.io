@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+  <head>
 	  <!-- Required -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Details -->
-		<meta name="author" property="og:author" content="Christan de Luna">
-		<meta name="description" property="og:description" content="Portfolio of Christan de Luna.">
-    <meta name="keywords" property="og:keywords" content="HTML,CSS,JavaScript">
-    <title>Christan de Luna • Web Developer &amp; Designer Aspirant</title>
-    <!-- Links and scripts -->
-		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!-- Canonical SEO -->
+    <title>Christan de Luna | Web Developer &amp; Designer Aspirant</title>
+    <link rel="canonical" href="http://cdeluna95.github.io" />
+    <meta name="robots" content="index,follow" />
+    <meta name="title" content="Christan de Luna | Web Developer &amp; Designer Aspirant" />
+    <meta name="description" content="Personal website showing portfolio and web design skills." />
+    <meta name="author" content="Christan de Luna" />
+    <meta name="language" content="en" />
+    <meta name="keywords" content="christan de luna, cdeluna, cdeluna95, cjdeluna95, cheebdragonite, ch33bdragonite, chibiiceclimberz, cheeb" />
+    <!-- Open Graph data -->
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:title" content="Christan de Luna | Web Developer &amp; Designer Aspirant" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://cdeluna95.github.io.com" />
+    <meta property="og:image" content="images/cheeb.png" />
+    <meta property="og:description" content="Personal website showing portfolio and web design skills." />
+    <meta property="og:site_name" content="Personal Website"/>
+    <meta property="og:author" content="Christan de Luna" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ch33bdragonite">
+    <meta name="twitter:title" content="Christan de Luna | Web Developer &amp; Designer Aspirant">
+    <meta name="twitter:description" content="Personal website showing portfolio and web design skills.">
+    <meta name="twitter:creator" content="@ch33bdragonite">
+    <meta name="twitter:image" content="images/cheeb.png">
+    <!-- Design and CSS -->
+		<link type="image/png" rel="shortcut icon" href="images/favicon.png" />
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
 		<link type="text/css" rel="stylesheet" href="style.css" />
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Ajax and CDN -->
+    <link type="text/css" rel="stylesheet" href="../../assets/css/ie10-viewport-bug-workaround.css" />
+    <!-- Functions and JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<!-- Smooth scrolling-->
-		<script>
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-	  </script>
+		<script src="https://use.fontawesome.com/efd75aa873.js"></script>
 	</head>
 	
 	<body>
@@ -49,149 +53,373 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#index" class="navbar-left"><img src="images/cdelunalogo.png"></a>
+          <a href="#header" class="navbar-left"><img src="images/cdelunalogo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li class="dropdown">
+              <a href="#gallery" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#design">Web Designs</a></li>
+                <li><a href="#xenoblade">Xenoblade Chronicles X</a></li>
+                <li><a href="#brawl">Super Smash Bros. Brawl</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-      
-    <!-- Index -->
-    <div id="page-one">
-      <a id="index" class="index"></a>
-      <div class="container">
-        <div class="page-one-block">
-          <h1 class="page-one-title">
-            I&#39;m <em>Christan de Luna</em>. Web Developer and Designer Aspirant learning and aiming to deliver responsive web design.
-          </h1>
+	  
+    <!-- Header -->
+    <header id="page-one">
+      <a id="header"></a>
+      <div class="header-wrapper">
+        <div class="header-name">
+           Christan de Luna
+        </div>
+        <div class="header-role">
+          Web Developer and Designer Aspirant
         </div>
       </div>
-    </div>
+    </header>
     
     <!-- About -->
-    <div id="page-two">
-      <a id="about" class="about"></a>
+    <section id="page-two">
+      <a id="about"></a>
       <div class="container">
-        <img class="page-two-img" src="images/cheeb.png">
-        <div class="page-two-block">
-          <div class="page-two-para">
+        <div class="about-wrapper">
+          <div class="about-title">
+            <h2>About</h2>
+          </div>
+          <div class="about-desc">
             <p>Hi, I&#39;m Christan! Or preferably Christian, with the letter I. I also go by <em>Cheeb</em>, <em>ChibiIceClimberz</em>, or
-            <em>Ch33bDragonite</em> if you know me online! Just look me up!<br><br>
-            I&#39;m currently in my fourth year at Georgia Gwinnett College studying Information Technology with an emphasis in Software Development. 
+            <em>Ch33bDragonite</em> if you know me online! Just look me up!</p>
+            <p>I&#39;m currently in my fourth year at Georgia Gwinnett College studying Information Technology with an emphasis in Software Development. 
             Right now, I'm looking for opportunities that&#39;ll help me sharpen my knowledge, skills, and abilities in the field of web development
             and design. I want to learn the best coding practices and standards available, as well as give myself exposure to a professional 
-            environment.<br><br>
-            When I&#39;m not coding, I go on YouTube, draw, play video games, and work out!</p>
+            environment. When I&#39;m not coding, I go on YouTube, draw, play video games, and work out!</p>
           </div>
-          <div class="page-two-resume">
-             <a class="btn btn-primary" href="docs/de_luna_christan_resume.pdf" role="button">Resume</a>
+          <div class="about-resume">
+             <a class="btn btn-default" href="docs/de_luna_christan_resume.pdf" role="button">Resume</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     
-    <!-- Projects -->
-    <div id="page-three">
-      <a id="projects" class="projects"></a>
+    <!-- Projects Description -->
+    <section id="page-three">
+      <a id="projects"></a>
       <div class="container">
-        <!-- Personal Website -->
-        <div class="row">
-          <div class="project-content">
-            <div class="col-md-8">
-              <a href="https://cdeluna95.github.io"><img src="images/cheebsite.png" class="project-image"></a>
-            </div>
-            <div class="col-md-4">
-              <div class="project-desc">
-                <a href="https://cdeluna95.github.io">cdeluna95.github.io</a><br><br>
-                <p><strong>Technologies</strong>: HTML, CSS, Bootstrap<br><br>
-                Constantly updating this website as I experiment with different web designs. Ya.</p>
-              </div>
-            </div>
+        <div class="projects-wrapper">
+          <div class="projects-title">
+            <h2>Projects</h2>
           </div>
-        </div>
-        <!-- To Do List -->
-        <div class="row">
-          <div class="project-content">
-            <div class="col-md-8">
-              <a href="https://walnut-beak.hyperdev.space"><img src="images/todolist.png" class="project-image"></a>
-            </div>
-            <div class="col-md-4">
-              <div class="project-desc">
-                <a href="https://walnut-beak.hyperdev.space">walnut-beak.hyperdev.space</a><br><br>
-                <p><strong>Technologies</strong>: HTML, JavaScript<br><br>
-                Add, change, delete, or toggle things on a very simple to do list.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- YouTube Link Sharer -->
-        <div class="row">
-          <div class="project-content">
-            <div class="col-md-8">
-              <a href="https://cdelunamylinks-onrails.herokuapp.com"><img src="images/youtubelinksharer.png" class="project-image"></a>
-            </div>
-            <div class="col-md-4">
-              <div class="project-desc">
-                <a href="https://cdelunamylinks-onrails.herokuapp.com">cdelunamylinks-onrails.herokuapp.com</a><br><br>
-                <p><strong>Technologies</strong>: Ruby on Rails, HTML, CSS, Bootstrap<br><br>
-                Upload YouTube videos—or any link really—and add comments!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Visual App -->
-        <div class="row">
-          <div class="project-content">
-            <div class="col-md-8">
-              <a href="https://cdelunavisualapp.herokuapp.com"><img src="images/visualapp.png" class="project-image"></a>
-            </div>
-            <div class="col-md-4">
-              <div class="project-desc">
-                <a href="https://cdelunavisualapp.herokuapp.com">cdelunavisualapp.herokuapp.com</a><br><br>
-                <p><strong>Technologies</strong>: Ruby on Rails, HTML, CSS, JavaScript (jQuery), Bootstrap<br><br>
-                Upload your favorite drawing—or any image really—and rate them! Do note that Heroku is quite iffy with the styling
-                and image displays.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Super Elite: Space Adventure! -->
-        <div class="row">
-          <div class="project-content">
-            <div class="col-md-8">
-              <a href="https://github.com/Kenjacau/STARGAME"><img src="images/superelitespaceadventure.png" class="project-image"></a>
-            </div>
-            <div class="col-md-4">
-              <div class="project-desc">
-                <a href="https://github.com/Kenjacau/STARGAME">github.com/Kenjacau/STARGAME</a><br><br>
-                <p><strong>Technologies</strong>: Java<br><br>
-                Explore planets as you beat enemies and bosses along your way! In text form!</p>
-              </div>
-            </div>
+          <div class="projects-desc">
+            <p>Here's a portfolio of every academic and personal project I've done thus far. Below are also some web designs I've made for fun.</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    
+    <!-- Projects Carousel -->
+    <section id="page-four">
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <!-- List Box -->
+        <div class="carousel-inner" role="listbox">
+          <!-- Project 1 -->
+          <div class="item active">
+            <div class="carousel-wrapper">
+              <div class="row featurette">
+                <div class="carousel-container">
+                  <div class="col-md-6">
+                    <img class="featurette-image img-responsive center-block" src="images/projects/cheebsite.png" alt="Generic placeholder image">
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="carousel-title">
+                      Personal Website  
+                    </h2>
+                    <p class="lead carousel-desc">
+                      Constantly updating this website as I experiment with different web designs in HTML, CSS, and JavaScript. Gets a little tiring seeing the same visuals, no? Mix it up a bit!
+                    </p>
+                    <p class="lead carousel-lang">
+                      HTML, CSS, JavaScript | Bootstrap, jQuery
+                    </p>
+                    <div class="carousel-buttons">
+                      <a class="btn btn-primary" href="http://cdeluna95.github.io" role="button">Link</a>
+                      <a class="btn btn-primary" href="http://github.com/cdeluna95/cdeluna95.github.io" role="button">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="item">
+            <div class="carousel-wrapper">
+              <div class="row featurette">
+                <div class="carousel-container">
+                  <div class="col-md-6">
+                    <img class="featurette-image img-responsive center-block" src="images/projects/todolist.png">
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="carousel-title">
+                      To Do List 
+                    </h2>
+                    <p class="lead carousel-desc">
+                      Add, change, delete, or toggle things on a very simple to do list. Nothing much besides learning a bit more JavaScript besides the usual HTML and CSS.
+                    </p>
+                    <p class="lead carousel-lang">
+                      HTML, JavaScript
+                    </p>
+                    <div class="carousel-buttons">
+                      <a class="btn btn-primary" href="http://walnut-beak.hyperdev.space" role="button">Link</a>
+                      <a class="btn btn-primary" href="http://github.com/cdeluna95/todo-list" role="button">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="item">
+            <div class="carousel-wrapper">
+              <div class="row featurette">
+                <div class="carousel-container">
+                  <div class="col-md-6">
+                    <img class="featurette-image img-responsive center-block" src="images/projects/youtubelinksharer.png">
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="carousel-title">
+                      YouTube Link Sharer
+                    </h2>
+                    <p class="lead carousel-desc">
+                      Upload YouTube videos—or any link really—and add comments! The most CRUD-dest app you can find on the Internet. Thanks Ruby Scaffoldding!
+                    </p>
+                    <p class="lead carousel-lang">
+                      Ruby on Rails
+                    </p>
+                    <div class="carousel-buttons">
+                      <a class="btn btn-primary" href="http://cdelunamylinks-onrails.herokuapp.com" role="button">Link</a>
+                      <a class="btn btn-primary" href="http://github.com/cdeluna95/mylinks-onrails" role="button">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="item">
+            <div class="carousel-wrapper">
+              <div class="row featurette">
+                <div class="carousel-container">
+                  <div class="col-md-6">
+                    <img class="featurette-image img-responsive center-block" src="images/projects/visualapp.png">
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="carousel-title">
+                      Visual App
+                    </h2>
+                    <p class="lead carousel-desc">
+                      Upload your favorite drawing—or any image really—and rate them! Do note that Heroku is quite iffy with the styling and image displays. The image on the left is how it's intended to look, aside from the cropped border.
+                    </p>
+                    <p class="lead carousel-lang">
+                      Ruby on Rails
+                    </p>
+                    <div class="carousel-buttons">
+                      <a class="btn btn-primary" href="http://cdelunavisualapp.herokuapp.com" role="button">Link</a>
+                      <a class="btn btn-primary" href="http://github.com/cdeluna95/visual_app" role="button">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="item">
+            <div class="carousel-wrapper">
+              <div class="row featurette">
+                <div class="carousel-container">
+                  <div class="col-md-6">
+                    <img class="featurette-image img-responsive center-block" src="images/projects/superelitespaceadventure.png">
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="carousel-title">
+                      Super Elite: Space Adventure!
+                    </h2>
+                    <p class="lead carousel-desc">
+                      Made by a four-man group, you can explore planets as you beat enemies and bosses along your way! In text form! Choose your favorite officer now!
+                    </p>
+                    <p class="lead carousel-lang">
+                      Java
+                    </p>
+                    <div class="carousel-buttons">
+                      <a class="btn btn-primary" href="http://github.com/Kenjacau/STARGAME" role="button">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- List Box -->
+        <!-- Arrows -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- myCarousel -->
+    </section>
     
     <!-- Gallery -->
-    <div id="page-four">
-      <a id="gallery" class="gallery"></a>
+    <section id="page-five">
       <div class="container">
-        <div class="gallery-content">
-          <a href="http://imgur.com/a/sX8lS"><img src="images/formulaoblivia.jpg" class="formula-oblivia"></a><a href="http://imgur.com/a/sX8lS"><img src="images/formuladivine.jpg" class="formula-divine"></a>
-          <a href="http://tinypic.com/a/26xzk/2"><img src="images/darkmetaknight.jpg" class="dark-meta-knight"></a><a href="http://tinypic.com/a/26xzk/2"><img src="images/missingnotoonlink.jpg" class="missingno-toon-link"></a>
+        <div class="gallery-wrapper">
+          <div class="gallery-title">
+            <h2>Gallery</h2>
+          </div>
+          <!-- Web Designs -->
+          <a id="design"></a>
+          <div class="gallery-subtitle">
+            <h3>Web Designs</h3>
+          </div>
+          <div class="design-images">
+            <!-- Row 1 -->
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/designs/chemlearngame.png">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/designs/astromeet.png">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/designs/cheebsiteold.png">
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/designs/pacifictrails.png">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/designs/trillium.png">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/designs/casitasedona.png">
+              </div>
+            </div>
+          </div>
+          <!-- Xenoblade Chronicles X -->
+          <a id="xenoblade"></a>
+          <div class="gallery-subtitle">
+            <h3>Xenoblade Chronicles X</h3>
+          </div>
+          <div class="xenoblade-images">
+            <!-- Row 1 -->
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/xenoblade/infernonla.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/xenoblade/noctilumformula.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/xenoblade/divineformula.jpg">
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/xenoblade/obliviaformula.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/xenoblade/whitewoodformula.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/xenoblade/sylvalumformula.jpg">
+              </div>
+            </div>
+          </div>
+          <!-- Super Smash Bros. Brawl -->
+          <a id="brawl"></a>
+          <div class="gallery-subtitle">
+            <h3>Super Smash Bros. Brawl</h3>
+          </div>
+          <div class="brawl-images">
+            <!-- Row 1 -->
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/brawl/latiaosclimbers.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/brawl/kewlkirby.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/brawl/1600dressedpeach.jpg">
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/brawl/missingnotoonlink.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/brawl/fortunezelda.jpg">
+              </div>
+              <div class="col-md-4">
+                <img class="img-responsive" src="images/brawl/darkmetaknight.jpg">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="page-six">
+      <a id="contact"></a>
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-up">
+            <a href="#header"><i class="fa fa-hand-o-up"></i></a>
+          </div>
+          <div class="contact-title">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="contact-links">
+            <a href="http://linkedin.com/in/christan-de-luna"><i class="fa fa-linkedin"></i></a>
+            <a href="http://twitter.com/ch33bdragonite"><i class="fa fa-twitter"></i></a>
+            <a href="http://github.com/cdeluna95"><i class="fa fa-github"></i></a>
+            <a href="mailto:cjdeluna95@gmail.com"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>    
+      </div>
+    </section>
     
     <!-- Footer -->
-    <footer class="footer">
-      <small>By Christan de Luna. Site under construction.</small>
+    <footer id="page-seven">
+      <a id="footer"></a>
+      <div class="container">
+        <div class="footer-wrapper">
+          <small class="footer-info">
+            By Christan de Luna. Site under construction.
+          </small>
+        </div>    
+      </div>
     </footer>
     
     <!-- Bootstrap core JavaScript -->
@@ -200,16 +428,17 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- External -->
+    <script src="function.js"></script>
     <!-- Google Analytics -->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-84736266-1', 'auto');
-    ga('send', 'pageview');
-  
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-84736266-1', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>
