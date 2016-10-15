@@ -473,7 +473,7 @@ p {
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
   #page-one { background-attachment: scroll; }
-  .header-wrapper { padding-top: 18em; left: 0; transform: scale(0.8); }
+  .header-wrapper { padding-top: 17em; left: -5%; transform: scale(0.7); }
   .header-name { font-size: 25px; }
-  .header-role { font-size: 14px; }
+  .header-role { font-size: 11px;}
   .carousel-container { padding: 0 20px 0 20px; } }
