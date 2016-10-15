@@ -1,6 +1,6 @@
 /* Global fonts */
 
-@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Patrick+Hand+SC|Della+Respira|Underdog';
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Patrick+Hand+SC|Quicksand|Underdog';
 
 /* Global styles */
 
@@ -165,7 +165,8 @@ p {
 
 .header-wrapper {
   color: #5e4b4b; /* $midgray */
-  font-family: 'Della Respira', serif;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   padding-top: 30%;
@@ -173,20 +174,22 @@ p {
 }
 
 .header-name {
-  font-size: 40px;
-  letter-spacing: 2px;
+  font-size: 30px;
+  letter-spacing: 5px;
   background: #fff;
   padding: 5px 0 5px 20px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
 }
 
 .header-role {
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 2.5px;
   background: #74ad40; /* $midgreen */
   padding: 5px 70px 5px 20px;
   margin-right: -70px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* About styles */
