@@ -1,3 +1,7 @@
+/*
+* @author: Christan de Luna
+*/
+
 /* Scroll page function */
 $(function() {
   $('a[href*="#"]:not([href="#myCarousel"])').click(function() {
@@ -14,7 +18,7 @@ $(function() {
   });
 });
 
-/* Selected class function */
+/* Navbar active class function */
 $(document).ready(function() {
   $('.navbar a').on("click", function() {
     $(this).parent().siblings().find('a').removeClass('selected');
@@ -22,9 +26,16 @@ $(document).ready(function() {
   });
 });
 
-/* Scroll removes selected class function */
+/* Angle-down active class function */
+$(document).ready(function() {
+  $('.header-scroll a').on("click", function() {
+    $('.navbar a').parent().siblings().find('#about').addClass('selected');
+  });
+});
+
+/* Hand-up removes selected class */
 $(document).ready(function() {
   $('.contact-up a').on("click", function() {
-    $('.navbar a').parent().siblings().find('a').removeClass('selected');
+    $('.navbar a').removeClass('selected');
   });
 });
