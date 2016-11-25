@@ -26,13 +26,6 @@ $(document).ready(function() {
   });
 });
 
-/* Angle-down active class function */
-$(document).ready(function() {
-  $('.header-scroll a').on("click", function() {
-    $('.navbar a').parent().siblings().find('#about').addClass('selected');
-  });
-});
-
 /* Hand-up removes selected class */
 $(document).ready(function() {
   $('.contact-up a').on("click", function() {
