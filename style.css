@@ -382,8 +382,8 @@ hr {
 
 .carousel-control.left, .carousel-control.right {
   color: #212121; /* $darkgray */
-  background-image:none !important;
-  filter:none !important;
+  background-image: none !important;
+  filter :none !important;
 }
 
 .carousel-container img {
