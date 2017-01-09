@@ -1,0 +1,128 @@
+/**
+ * Define text styles
+ */
+@mixin textStyle($color, $family, $size, $weight, $style, $transform, $decoration, $shadow, $letter-spacing) {
+  color: $color;
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+    style: $style;
+  }
+  text: {
+    transform: $transform;
+    decoration: $decoration;
+    shadow: $shadow;
+  }
+  letter-spacing: $letter-spacing;
+}
+
+/**
+ * Define button styles
+ */
+@mixin btnStyle($background, $border, $border-radius, $box-shadow, $padding) {
+  background: $background;
+  outline: 0;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $padding;
+}
+
+/**
+ * Define horizontal line styles
+ */
+@mixin hrStyle($max-width, $margin, $border-bottom, $box-shadow: null) {
+  max-width: $max-width;
+  margin: $margin;
+  border: 0;
+  border-bottom: $border-bottom;
+  box-shadow: $box-shadow;
+}
+
+/**
+ * Define background properties
+ */
+@mixin bgProps($top-gradient, $bottom-gradient, $url, $position, $size, $repeat, $attachment) {
+  background: {
+    image: linear-gradient($top-gradient, $bottom-gradient), url($url);
+    position: $position;
+    size: $size;
+    repeat: $repeat;
+    attachment: $attachment;
+  }
+}
+
+/**
+ * Define position properties
+ */
+@mixin posLayout($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/**
+ * Define flexbox container properties
+ */
+@mixin flexContLayout($display, $direction: null, $wrap: null, $justify-content: null, $align-items: null, $align-content: null) {
+  display: $display;
+  flex: {
+    direction: $direction;
+    wrap: $wrap;
+  }
+  justify-content: $justify-content;
+  align-items: $align-items;
+  align-content: $align-content;
+}
+
+/**
+ * Define flexbox item properties
+ */
+@mixin flexItemLayout($order: null, $grow: null, $shrink: null, $basis: null, $align-self: null) {
+  order: $order;
+  flex: {
+    grow: $grow;
+    shrink: $shrink;
+    basis: $basis;
+  }
+  align-self: $align-self;
+}
+
+/**
+ * Define a series of arguments for transition property
+ */
+@mixin transProps($transition...) {
+  transition: $transition;
+}
+
+/**
+ * Define conditional breakpoints
+ */
+@mixin deviceBreak($break) {
+  @if $break == large {
+    @media(max-width: 1420px) {
+      @content;
+    }
+  }
+  
+  @else if $break == medium {
+    @media(max-width: 1200px) {
+      @content;
+    }
+  }
+  
+  @else if $break == small {
+    @media(max-width: 760px) {
+      @content;
+    }
+  }
+  
+  @else {
+    @media($break) {
+      @content;
+    }
+  }
+}

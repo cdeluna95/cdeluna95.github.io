@@ -1,0 +1,174 @@
+/**
+ * About styles
+ */
+#about {
+  background: lighten($gray, 25%);
+  @extend %regular-ease;
+  
+  .about-wrapper {
+    border: 0;
+    @extend %wrapper;
+    
+    .about-title-wrapper {
+      text-align: center;
+      
+      .about-title {
+        @extend %main-title;
+        @extend %main-title-breakpoint;
+      }
+    }
+    
+    .about-line {
+      @extend %main-title-line;
+    }
+    
+    .about-flex {
+      margin: 45px 30px;
+      @extend %flex-row;
+      @include deviceBreak('max-width: 1260px') {
+        flex-direction: column;
+        margin: 45px 0;
+      }
+      
+      .about-img-wrapper {
+        margin: 0 20px;
+        @extend %regular-ease;
+        @extend %image-wrapper-properties;
+        
+        &:hover,
+        &:focus {
+          @extend %shadow-hover-properties;
+        }
+        
+        &:active {
+          @extend %shadow-active-properties;
+        }
+        
+        .about-hover {
+          @extend %image-position-properties;
+          
+          &:hover,
+          &:focus {
+            
+            .cheeb-img-2 {
+              opacity: 1;
+            }
+            
+            .about-icon {
+              opacity: 1;
+              animation: dragDown 2s ease-in-out infinite;
+              @include deviceBreak(small) {
+                opacity: 0;
+                animation: 0;
+              }
+            }
+          }
+          
+          &:active {
+            
+            .cheeb-img-2 {
+              transform: translateY(0);
+            }
+            
+            .about-icon {
+              opacity: 0;
+              animation: 0;
+            }
+          }
+          
+          .cheeb-img {
+            width: 400px;
+            @extend %image-properties;
+          }
+          
+          .about-overlay {
+            @include posLayout(absolute, $top: 0);
+          }
+          
+          .cheeb-img-2 {
+            opacity: 0;
+            transform: translateY(-200px);
+            @extend %regular-ease;
+          }
+          
+          .about-icon {
+            opacity: 0;
+            @extend %regular-ease;
+            @include posLayout(absolute, $top: 10%, $left: 20%);
+            
+            .fa {
+              @include textStyle(rgba($white, 0.75), null, 2rem, null, null, null, null, 1px 1px 2px rgba($black, 0.2), null);
+            }
+          }
+        }
+      }
+      
+      .about-desc {
+        flex: 1;
+        margin: 0 20px;
+        
+        .about-p {
+          display: inline;
+          line-height: 200%;
+          @include textStyle(rgba($black, 0.75), $lato, 1.25rem, null, null, null, null, 0 0 1px rgba($black, 0.1), null);
+          @include deviceBreak('max-width: 1260px') {
+            display: inline-block;
+          }
+          
+          $about-spans: ("name": $green, "ggc": $ggc);
+        
+          @each $span, $span-color in $about-spans {
+            .about-#{$span} {
+              color: $span-color;
+              font-weight: 900;
+            }
+          }
+        }
+        
+        .about-qlty {
+          margin: 10px 0;
+          @include flexContLayout(flex, $wrap: wrap);
+          
+          .qlty-span {
+            background: $green;
+            box-shadow: 0 0 1px rgba($black, 0.1);
+            margin: 5px;
+            padding: 20px;
+            @include flexItemLayout($grow: 1, $shrink: 1, $basis: 40%);
+            @include deviceBreak('max-width: 1260px') {
+              flex-basis: 100%;
+            }
+            
+            .fa {
+              margin: 0 20px 0 10px;
+              @include textStyle(rgba($white, 0.75), null, 1.5rem, null, null, null, null, 1px 1px 2px rgba($black, 0.2), null);
+              @include transProps(1s cubic-bezier(0.5, 2, 0.4, 0.7));
+              
+              &:hover,
+              &:focus {
+                transform: scale(1.5) rotate(360deg);
+              }
+              
+              &:active {
+                transform: scale(1.5) rotate(315deg);
+              }
+            }
+            
+            .qlty-h3 {
+              display: inline;
+              @include textStyle(rgba($white, 0.75), $lato, 1.15rem, null, null, null, null, 1px 1px 2px rgba($black, 0.2), null);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#about.darken {
+  @extend %dark-body;
+}
+
+#about.freeze {
+  @extend %freeze-body;
+}

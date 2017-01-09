@@ -1,0 +1,40 @@
+{
+  "name": "cdeluna95.github.io",
+  "version": "5.0.0",
+  "description": "Portfolio showing projects and web design skills",
+  "main": "index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdeluna95"
+  },
+  "keywords": [
+    "christan",
+    "de",
+    "luna",
+    "cdeluna",
+    "cdeluna95",
+    "cjdeluna95",
+    "cheebdragonite",
+    "ch33bdragonite",
+    "chibiiceclimberz",
+    "cheeb"
+  ],
+  "author": "Christan de Luna",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

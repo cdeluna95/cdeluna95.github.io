@@ -1,0 +1,58 @@
+@import "./tools/vars";
+
+/**
+ * Change color throughout the animation
+ */
+@keyframes colorChange {
+  0%, 100% {
+    color: $lightgreen;
+  }
+  
+  20% {
+    color: $amber;
+  }
+  
+  40% {
+    color: $red;
+  }
+  
+  60% {
+    color: $deeppurple;
+  }
+  
+  80% {
+    color: $cyan;
+  }
+}
+
+/**
+ * Have icon slide down
+ */
+@keyframes dragDown {
+  0% {
+    opacity: 0;
+    top: 10%;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+    top: 30%;
+  }
+}
+
+/**
+ * Have icon point upwards
+ */
+@keyframes pointUp {
+  0%, 100% {
+    transform: translate(0);
+  }
+  
+  50% {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,287 @@
+/**
+ * Gallery styles
+ */
+#gallery {
+  background: lighten($bluegray, 50%);
+  @extend %regular-ease;
+  
+  .gallery-wrapper {
+    @extend %wrapper;
+    
+    .gallery-title-wrapper {
+      text-align: center;
+      
+      .gallery-title {
+        @extend %main-title;
+        @extend %main-title-breakpoint;
+      }
+    }
+    
+    .gallery-line {
+      @extend %main-title-line;
+    }
+    
+    .gallery-btns {
+      text-align: center;
+      margin: 20px 0;
+      
+      .gallery-btns-ul {
+        @extend %ul-even;
+        
+        .gallery-btns-li {
+          display: inline-block;
+          
+          .gallery-btns-a {
+            display: inline-block;
+            margin: 10px;
+            transform: translate(0);
+            @extend %regular-ease;
+            @include textStyle(rgba($black, 0.75), $reem, 1.5rem, 900, null, uppercase, none, 0 0 1px 1px rgba($black, 0.1), 1px);
+            @include btnStyle(rgba($black, 0), 4px solid rgba($black, 0.75), 1px, 0 0 1px 1px rgba($black, 0.1), 10px 10px 5px);
+            
+            &:before {
+              content: "";
+              z-index: -1;
+              transform: scaleX(0);
+              @extend %regular-ease;
+              @include posLayout(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+            }
+            
+            &:hover,
+            &:focus {
+              color: $white;
+              
+              &:before {
+                transform: scaleX(1.0);
+                @include transProps(all 600ms cubic-bezier(0.5, 1.6, 0.4, 0.7));
+              }
+            }
+            
+            &:active {
+              transform: translateY(2px);
+            }
+          }
+          
+          $gallery-media: ("imgur": $imgur, "tinypic": $tinypic, "colors": $colors, "brawlvault": $brawlvault);
+              
+          @each $gallery-class, $gallery-color in $gallery-media {
+            .btn-#{$gallery-class} {
+              &:before {
+                background: $gallery-color;
+              }
+              
+              &:hover,
+              &:focus {
+                border: 4px solid $gallery-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .gallery-flex {
+      @extend %flex-row;
+      
+      /* Web Design */
+      
+      .web-item {
+        margin: 10px;
+        @extend %regular-ease;
+        @extend %image-wrapper-properties;
+        
+        &:hover,
+        &:focus {
+          @extend %shadow-hover-properties;
+        }
+        
+        &:active {
+          @extend %shadow-active-properties;
+        }
+        
+        .web-hover {
+          @extend %image-position-properties;
+          
+          &:hover,
+          &:focus {
+            
+            .web-a {
+              @extend %text-hover-properties;
+              @extend %text-neutral-translate;
+            }
+          }
+          
+          .web {
+            width: 375px;
+            @extend %image-properties;
+            @extend %regular-ease;
+            
+            &:hover,
+            &:focus {
+              @extend %filter-hover-properties;
+            }
+            
+            &:active {
+              @extend %filter-active-properties;
+            }
+          }
+          
+          .web-overlay {
+            @extend %image-overlay-properties;
+            @extend %image-neutral-translate;
+          }
+          
+          .web-a {
+            @extend %text-overlay-properties;
+            @extend %regular-ease;
+            
+            &:hover,
+            &:focus {
+              @extend %dark-hover-properties;
+            }
+            
+            &:active {
+              @extend %dark-active-properties;
+            }
+          }
+        }
+      }
+      
+      /* Xenoblade Chronicles X */
+      
+      .xeno-item {
+        margin: 10px;
+        @extend %regular-ease;
+        @extend %image-wrapper-properties;
+        
+        &:hover,
+        &:focus {
+          @extend %shadow-hover-properties;
+        }
+        
+        &:active {
+          @extend %shadow-active-properties;
+        }
+        
+        .xeno-hover {
+          @extend %image-position-properties;
+          
+          &:hover,
+          &:focus {
+            
+            .xeno-h3 {
+            	@extend %text-hover-properties;
+            	@extend %text-neutral-translate;
+            }
+          }
+          
+          .xeno {
+            width: 375px;
+            @extend %image-properties;
+            @extend %regular-ease;
+            
+            &:hover,
+            &:focus {
+              @extend %filter-hover-properties;
+            }
+            
+            &:active {
+              @extend %filter-active-properties;
+            }
+          }
+          
+          .xeno-overlay {
+            @extend %image-overlay-properties;
+            @extend %image-neutral-translate;
+          }
+          
+          .xeno-h3 {
+            @extend %text-overlay-properties;
+            @extend %regular-ease;
+            
+            &:hover,
+            &:focus {
+              @extend %dark-hover-properties;
+            }
+            
+            &:active {
+              @extend %dark-active-properties;
+            }
+          }
+        }
+      }
+      
+      /* Super Smash Bros. Brawl */
+      
+      .ssbb-item {
+        margin: 10px 20px 20px;
+        @extend %regular-ease;
+        @extend %image-wrapper-properties;
+        
+        &:hover,
+        &:focus {
+          @extend %shadow-hover-properties;
+        }
+        
+        &:active {
+          @extend %shadow-active-properties;
+        }
+        
+        .ssbb-hover {
+          @extend %image-position-properties;
+          
+          &:hover,
+          &:focus {
+            
+            .ssbb-h3 {
+            	@extend %text-hover-properties;
+            	@extend %text-neutral-translate;
+            }
+          }
+          
+          .ssbb {
+            width: 375px;
+            @extend %image-properties;
+            @extend %regular-ease;
+            
+            &:hover,
+            &:focus {
+              @extend %filter-hover-properties;
+            }
+            
+            &:active {
+              @extend %filter-active-properties;
+            }
+          }
+          
+          .ssbb-overlay {
+            @extend %image-overlay-properties;
+            @extend %image-neutral-translate;
+          }
+          
+          .ssbb-h3 {
+            @extend %text-overlay-properties;
+            @extend %regular-ease;
+            
+            &:hover,
+            &:focus {
+              @extend %dark-hover-properties;
+            }
+            
+            &:active {
+              @extend %dark-active-properties;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#gallery.darken {
+  @extend %dark-body;
+}
+
+#gallery.freeze {
+  @extend %freeze-body;
+}

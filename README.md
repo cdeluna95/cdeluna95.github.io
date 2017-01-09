@@ -1,2 +1,3 @@
 # cdeluna95.github.io
-* Older site is in gh-pages3 branch
+* Latest version of personal website
+* Older site is in gh-pages4 branch

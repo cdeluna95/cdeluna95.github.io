@@ -1,0 +1,14 @@
+/**
+ * Resize images based on screen width
+ */
+.img-auto {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Round images to half radius
+ */
+.img-circle {
+  border-radius: 50%;
+}

@@ -1,0 +1,46 @@
+/**
+ * Set global fonts
+ */
+$reem: 'Reem Kufi', sans-serif;
+$lato: 'Lato', sans-serif;
+$megrim: 'Megrim', cursive;
+
+/**
+ * Set global colors
+ */
+$white: #fff;
+$black: #000;
+$gray: #9e9e9e;
+$brown: #795548;
+$red: #f44336;
+$pink: #e91e63;
+$yellow: #ffeb3b;
+$amber: #ffc107;
+$orange: #ff9800;
+$deeporange: #ff5722;
+$lime: #cddc39;
+$lightgreen: #8bc34a;
+$green: #4caf50;
+$teal: #009688;
+$bluegray: #607d8b;
+$blue: #2196f3;
+$lightblue: #03a9f4;
+$cyan: #00bcd4;
+$indigo: #3f51b5;
+$purple: #9c27b0;
+$deeppurple: #673ab7;
+
+/**
+ * Set global media colors
+ */
+$google: #dd4b39;
+$youtube: #bb0000;
+$linkedin: #007bb5;
+$twitter: #55acee;
+$github: #000;
+$ggc: #085a45;
+$pdf: #da251c;
+$imgur: #2b2b2b;
+$tinypic: linear-gradient(to right, $blue 0%, $green 35%, $deeporange 70%, $yellow 100%);
+$colors: linear-gradient(to right, $yellow 0%, $blue 35%, $green 70%, $amber 100%);
+$brawlvault: #ec081d;

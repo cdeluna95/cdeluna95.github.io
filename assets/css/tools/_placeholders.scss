@@ -1,0 +1,215 @@
+/**
+ * Set uniform main title
+ */
+%main-title {
+  display: inline;
+  @include textStyle(rgba($black, 0.75), $reem, 3.5rem, 900, null, uppercase, null, 1px 1px 2px rgba($black, 0.2), 2px);
+}
+
+/**
+ * Set uniform horizontal line under main title
+ */
+%main-title-line {
+  @include hrStyle(120px, 30px auto, 6px solid $green);
+}
+
+/**
+ * Set uniform text properties within image
+ */
+%text-overlay-properties {
+  text-align: center;
+  background: $green;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  @include textStyle(rgba($white, 0.75), $reem, 1.25rem, null, null, uppercase, none, 1px 1px 2px rgba($black, 0.2), 1px);
+}
+
+/**
+ * Set uniform text properties within image on hover class
+ */
+%text-hover-properties {
+  transform: translateY(-97px);
+}
+
+/**
+ * Set uniform image properties
+ */
+%image-properties {
+  border-radius: 1px;
+  display: block;
+  position: relative;
+  height: auto;
+}
+
+/**
+ * Set uniform image wrapper properties
+ */
+%image-wrapper-properties {
+  background: $white;
+  border-radius: 1px;
+  box-shadow: 0 0 4px 1px rgba($black, 0.2);
+  padding: 5px;
+}
+
+/**
+ * Set uniform image position properties
+ */
+%image-position-properties {
+  overflow: hidden;
+  position: relative;
+}
+
+/**
+ * Set uniform image overlay properties
+ */
+%image-overlay-properties {
+  width: 100%;
+	transform: translateY(100px);
+	@include posLayout(absolute, $bottom: 0);
+}
+
+/**
+ * Set uniform darkened background properties for text overlay on hover class
+ */
+%dark-hover-properties {
+  background: darken($green, 5%);
+}
+
+/**
+ * Set uniform darkened background properties for text overlay on active class
+ */
+%dark-active-properties {
+  background: darken($green, 15%);
+}
+
+/**
+ * Set uniform box-shadow properties for images on hover class
+ */
+%shadow-hover-properties {
+  box-shadow: 0 0 20px rgba($black, 0.4);
+}
+ 
+/**
+ * Set uniform box-shadow properties for images on active class
+ */
+%shadow-active-properties {
+  box-shadow: 0 0 30px rgba($black, 0.4);
+}
+
+/**
+ * Set uniform brightness properties for images on hover class
+ */
+%filter-hover-properties {
+  filter: brightness(0.8);
+}
+
+/**
+ * Set uniform brightness properties for images on active class
+ */
+%filter-active-properties {
+  filter: brightness(0.6);
+}
+
+/**
+ * Set uniform brightness filter for darken class upon nav-sidebar event
+ */
+%dark-body {
+  filter: brightness(0.5);
+}
+
+/**
+ * Set uniform pointer event for freeze class upon nav-sidebar event
+ */
+%freeze-body {
+  pointer-events: none;
+}
+
+/**
+ * Set uniform list-style, margin, and padding for unordered lists
+ */
+%ul-even {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Set uniform display and margin for lists
+ */
+%li-separator {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/**
+ * Set uniform display and margin for anchors
+ */
+%a-separator {
+  display: block;
+  margin: 5px 0;
+}
+
+/**
+ * Set uniform wrapper for each section
+ */
+%wrapper {
+  border-bottom: 1px dashed rgba($gray, 0.8);
+  padding: 8em 0;
+}
+
+/**
+ * Set uniform flexbox row properties
+ */
+%flex-row {
+  @include flexContLayout(flex, $direction: row, $wrap: wrap, $justify-content: center, $align-items: center);
+}
+
+/**
+ * Set uniform flexbox column properties
+ */
+%flex-column {
+  @include flexContLayout(flex, $direction: column, $wrap: wrap, $justify-content: center, $align-items: center);
+}
+
+/**
+ * Set uniform ease-in-out transition
+ */
+%regular-ease {
+  @include transProps(300ms ease-in-out);
+}
+
+/**
+ * Set uniform cubic-bezier transition
+ */
+%jumpy-bezier {
+  @include transProps(300ms cubic-bezier(1, -1, 0, 2));
+}
+
+/**
+ * Set uniform small breakpoint for each section title
+ */
+%main-title-breakpoint {
+  @include deviceBreak(small) {
+    font-size: calc(3.5rem / 1.05);
+  }
+}
+
+/**
+ * Set uniform neutral translate position for text overlays on small screens
+ */
+%text-neutral-translate {
+  @include deviceBreak(small) {
+    transform: translate(0);
+  }
+}
+
+/**
+ * Set uniform neutral translate position for image overlays on small screens
+ */
+%image-neutral-translate {
+  @include deviceBreak(small) {
+    transform: translateY(3px);
+  }
+}

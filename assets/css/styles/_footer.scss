@@ -1,0 +1,29 @@
+/**
+ * Footer styles
+ */
+#footer {
+  background: darken($green, 10%);
+  @extend %regular-ease;
+  
+  .footer-wrapper {
+    padding: 1em 0;
+    
+    .footer-desc {
+      text-align: center;
+      
+      .footer-small {
+        display: inline-block;
+        transform: skewX(-5deg) translateY(1px);
+        @include textStyle(rgba($white, 0.75), $reem, 1rem, null, null, uppercase, null, 1px 1px 2px rgba($black, 0.2), 1px);
+      }
+    }
+  }
+}
+
+#footer.darken {
+  @extend %dark-body;
+}
+
+#footer.freeze {
+  @extend %freeze-body;
+}

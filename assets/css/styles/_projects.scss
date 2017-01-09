@@ -1,0 +1,162 @@
+/**
+ * Projects styles
+ */
+#projects {
+  background: lighten($gray, 30%);
+  @extend %regular-ease;
+  
+  .projects-wrapper {
+    @extend %wrapper;
+    
+    .projects-title-wrapper {
+      text-align: center;
+      
+      .projects-title {
+        @extend %main-title;
+        @extend %main-title-breakpoint;
+      }
+    }
+    
+    .projects-line {
+      @extend %main-title-line;
+    }
+    
+    .projects-flex {
+      @extend %flex-row;
+      
+      .projects-item {
+        margin: 15px;
+        @extend %regular-ease;
+        
+        &:hover,
+        &:focus {
+          @extend %shadow-hover-properties;
+        }
+        
+        &:active {
+          @extend %shadow-active-properties;
+        }
+        
+        .projects-hover {
+          text-align: center;
+          @extend %image-position-properties;
+          @extend %regular-ease;
+          
+          &:hover,
+          &:focus {
+            
+            .project {
+              opacity: 1;
+              transform: scale(1.2);
+              @include deviceBreak(small) {
+                transform: none;
+              }
+            }
+            
+            .projects-overlay {
+              opacity: 1;
+            }
+            
+            .projects-a,
+            .projects-h3,
+            .projects-btn {
+              transform: translateY(0);
+            }
+          }
+          
+          &:active {
+            filter: brightness(1.4);
+          }
+          
+          .project {
+            opacity: 0.6;
+            @extend %image-properties;
+            @extend %regular-ease;
+            @include deviceBreak(small) {
+              opacity: 1;
+            }
+          }
+          
+          .projects-overlay {
+            background: rgba($black, 0.5);
+            opacity: 0;
+            height: 100%;
+            transform: translate(0);
+            @extend %image-overlay-properties;
+            @extend %flex-column;
+            @extend %regular-ease;
+            @include deviceBreak(small) {
+              opacity: 1;
+            }
+          }
+          
+          .projects-a {
+            background: rgba($black, 0.75);
+            width: 100%;
+            padding: 20px;
+            transform: translateY(-100px);
+            @extend %jumpy-bezier;
+            @include textStyle(rgba($white, 0.75), $reem, 2.25rem, 900, null, uppercase, none, 2px 2px 4px rgba($black, 0.4), 2px);
+            @include deviceBreak(small) {
+              font-size: calc(2.25rem / 1.45);
+              transform: translate(0);
+            }
+            
+            &:hover,
+            &:focus {
+              transform: translateY(-10px);
+            }
+            
+            &:active {
+              transform: translateY(-15px);
+            }
+          }
+          
+          .projects-h3 {
+            transform: translateY(100px);
+            @extend %jumpy-bezier;
+            @include textStyle(rgba($white, 0.75), $reem, 1.5rem, null, null, uppercase, null, 1px 1px 2px rgba($black, 0.2), 2px);
+            @include deviceBreak(small) {
+              font-size: calc(1.5rem / 1.5);
+              transform: translate(0);
+            }
+          }
+          
+          .projects-btn {
+            transform: translateX(-100px);
+            @extend %regular-ease;
+            @include textStyle(rgba($white, 0.75), $reem, 1.75rem, null, null, uppercase, none, 1px 1px 1px rgba($black, 0.1), 1px);
+            @include btnStyle(rgba($black, 0), 3px solid rgba($white, 0.75), 1px, 2px 2px 4px rgba($black, 0.4), 10px 10px 5px);
+            @include deviceBreak(small) {
+              font-size: calc(1.75rem / 1.45);
+              border-width: 2px;
+              transform: translate(0);
+            }
+            
+            &:hover,
+            &:focus {
+              color: rgba($black, 0.75);
+              font-weight: 900;
+              background: rgba($white, 0.75);
+              border-color: rgba($white, 0);
+              transform: translateX(0);
+              @extend .projects-btn;
+            }
+            
+            &:active {
+              transform: translateY(2px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#projects.darken {
+  @extend %dark-body;
+}
+
+#projects.freeze {
+  @extend %freeze-body;
+}

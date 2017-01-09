@@ -2,422 +2,673 @@
 <html lang="en">
   <head>
     <!-- Required -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Canonical SEO -->
-    <title>Christan de Luna | Web Developer &amp; Designer Aspirant</title>
-    <link rel="canonical" href="http://cdeluna95.github.io" />
+    <title>Christan de Luna | Web Developer &amp; Designer</title>
+    <link rel="canonical" href="https://cdeluna95.github.io" />
     <meta name="robots" content="index,follow" />
-    <meta name="title" content="Christan de Luna | Web Developer &amp; Designer Aspirant" />
-    <meta name="description" content="Personal website showing portfolio and web design skills." />
+    <meta name="title" content="Christan de Luna | Web Developer &amp; Designer" />
+    <meta name="description" content="Portfolio showing projects and web design skills." />
     <meta name="author" content="Christan de Luna" />
     <meta name="language" content="en" />
     <meta name="keywords" content="christan de luna, cdeluna, cdeluna95, cjdeluna95, cheebdragonite, ch33bdragonite, chibiiceclimberz, cheeb" />
     <!-- Open Graph data -->
-    <meta property="og:locale" content="en_US"/>
-    <meta property="og:title" content="Christan de Luna | Web Developer &amp; Designer Aspirant" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Christan de Luna | Web Developer &amp; Designer" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://cdeluna95.github.io.com" />
-    <meta property="og:image" content="images/cheeb.png" />
-    <meta property="og:description" content="Personal website showing portfolio and web design skills." />
-    <meta property="og:site_name" content="Personal Website"/>
+    <meta property="og:url" content="https://cdeluna95.github.io.com" />
+    <meta property="og:image" content="https://cdeluna95.github.io/img/cheeb.png" />
+    <meta property="og:description" content="Portfolio showing projects and web design skills." />
+    <meta property="og:site_name" content="Personal Website" />
     <meta property="og:author" content="Christan de Luna" />
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@ch33bdragonite">
-    <meta name="twitter:title" content="Christan de Luna | Web Developer &amp; Designer Aspirant">
-    <meta name="twitter:description" content="Personal website showing portfolio and web design skills.">
-    <meta name="twitter:creator" content="@ch33bdragonite">
-    <meta name="twitter:image" content="images/cheeb.png">
-    <!-- Favicon, Bootstrap CSS, External CSS -->
-    <link type="image/png" rel="shortcut icon" href="images/favicon.png" />
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ch33bdragonite" />
+    <meta name="twitter:title" content="Christan de Luna | Web Developer &amp; Designer" />
+    <meta name="twitter:description" content="Portfolio showing projects and web design skills." />
+    <meta name="twitter:creator" content="@ch33bdragonite" />
+    <meta name="twitter:image" content="https://cdeluna95.github.io/img/cheeb.png" />
+    <!-- Assets -->
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/app.min.css" />
   </head>
   
   <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#header" class="navbar-left"><img src="images/cdelunalogo.png"></a>
+    
+    <!-- Navigation Bar -->
+    <nav id="nav">
+      
+      <div id="nav-burger">
+        <div class="nav-burger">
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
+          <span class="nav-bar"></span>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li class="dropdown">
-              <a href="#gallery" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#design">Web Designs</a></li>
-                <li><a href="#xenoblade">Xenoblade Chronicles X</a></li>
-                <li><a href="#brawl">Super Smash Bros. Brawl</a></li>
-              </ul>
+      </div>
+      
+      <div id="nav-sidebar">
+        <div class="nav-sidebar">
+          <ul class="nav-ul">
+            <li class="nav-li">
+              <a class="nav-a" href="#header">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span class="nav-span">
+                  Home
+                </span>
+              </a>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="nav-li">
+              <a class="nav-a" href="#projects">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <span class="nav-span">
+                  Projects
+                </span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="#gallery">
+                <i class="fa fa-photo" aria-hidden="true"></i>
+                <span class="nav-span">
+                  Gallery
+                </span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="#about">
+                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                <span class="nav-span">
+                  About
+                </span>
+              </a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" href="#contact">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <span class="nav-span">
+                  Contact
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+      
+      <div id="nav-arrow">
+        <div class="nav-arrow">
+          <a class="nav-arrow-a" href="#header">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
     </nav>
     
     <!-- Header -->
-    <header id="page-one">
-      <a id="header"></a>
+    <header id="header">
       <div class="header-wrapper">
-        <div class="header-name">
-           Christan de Luna
+        
+        <div class="header-name-wrapper">
+          <h1 class="header-name">
+            Christan de Luna
+          </h1>
         </div>
-        <div class="header-role">
-          Web Developer and Designer Aspirant
+        
+        <hr class="header-line" />
+        
+        <div class="header-role-wrapper">
+          <h2 class="header-role">
+            Web <span class="header-developer">Developer</span> and <span class="header-designer">Designer</span>
+          </h2>
         </div>
+        
       </div>
     </header>
     
-    <!-- About -->
-    <section id="page-two">
-      <a id="about"></a>
-      <div class="container">
-        <div class="about-wrapper">
-          <div class="about-cheeb">
-            <img class="img-responsive" src="images/cheeb.png" alt="Picture of Christan de Luna">
-          </div>
-          <div class="about-desc">
-            <p>Hi, I&#39;m <b>Christan</b>! I&#39;m currently in my fourth year at Georgia Gwinnett College studying Information Technology with an emphasis in Software Development. 
-            Right now, I'm looking for opportunities that&#39;ll help me sharpen my knowledge, skills, and abilities in the field of web development
-            and design. I want to learn the best coding practices and standards available, as well as give myself exposure to a professional 
-            environment. When I&#39;m not coding, I watch YouTube videos, draw, play video games, and work out!</p>
-          </div>
-          <hr>
-          <div class="about-activities">
-            <div class="row">
-              <div class="col-md-3 col-sm-3">
-                <i class="fa fa-code" aria-hidden="true"></i>
-                <h2>Front-End Mindset</h2>
-                <p>I have a big passion for pixel-perfect and responsive web design, but I've always wanted to go the full-stack route as well.
-                Gotta level up them JavaScript skillz! JavaScript's everywhere!</p>
-              </div>
-              <div class="col-md-3 col-sm-3">
-                <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                <h2>Graphic Design</h2>
-                <p>I've been drawing and making digital art ever since I was little—even though I'm just an amateur—so it's my aim
-                to craft websites as visually appealing and user-friendly as possible!</p>
-              </div>
-              <div class="col-md-3 col-sm-3">
-                <i class="fa fa-gamepad" aria-hidden="true"></i>
-                <h2>Gaming</h2>
-                <p>I'm a nerd. A video game nerd! I love all things Nintendo! <em>Super Smash Bros.</em>, <em>The Legend of Zelda</em>,
-                <em>Xenoblade Chronicles</em>, <em>Metroid</em>, and <em>Pok&eacute;mon</em>! See the site's landing page and gallery!</p>
-              </div>
-              <div class="col-md-3 col-sm-3">
-                <i class="fa fa-hand-grab-o" aria-hidden="true"></i>
-                <h2>Fitness</h2>
-                <p>I've been doing exercise for over a year now, and it's been, well, gains! I've been very dedicated with my
-                workout routine and nutrition, so it's helped me a lot physically and mentally!</p>
+    <!-- Projects -->
+    <section id="projects">
+      <div class="projects-wrapper">
+        
+        <div class="projects-title-wrapper">
+          <h2 class="projects-title">Projects</h2>
+        </div>
+        
+        <hr class="projects-line" />
+        
+        <div class="projects-flex">
+          <div class="projects-item">
+            <div class="projects-hover">
+              <img class="project img-auto" src="./assets/img/proj/cheebsite.png" alt="Personal Website by Christan de Luna" />
+              <div class="projects-overlay">
+                <a class="projects-a" href="https://cdeluna95.github.io">
+                  Personal Website
+                </a>
+                <h3 class="projects-h3">
+                  HTML, SASS, jQuery
+                </h3>
+                <a class="projects-btn" href="https://github.com/cdeluna95/cdeluna95.github.io" role="button">
+                  GitHub
+                </a>
               </div>
             </div>
           </div>
-          <div class="about-resume">
-           <a class="btn-green" href="docs/de_luna_christan_resume.pdf" role="button">Resume</a>
+          
+          <div class="projects-item">
+            <div class="projects-hover">
+              <img class="project img-auto" src="./assets/img/proj/twnkle.png" alt="Twnkle in MEAN" />
+              <div class="projects-overlay">
+                <a class="projects-a" href="https://docs.google.com/document/d/1bUh8cs-gRBb-C8LYwkMrowrc1An00kP5FO2cxj3FY70/edit">
+                  Twnkle
+                </a>
+                <h3 class="projects-h3">
+                  MySQL, Express.js, AngularJS, Node.js
+                </h3>
+                <a class="projects-btn" href="https://gitlab.com/ggc-dev-project/astromeet" role="button">
+                  GitLab
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-item">
+            <div class="projects-hover">
+              <img class="project img-auto" src="./assets/img/proj/xenobladequiz.png" alt="Xenoblade Chronicles Quiz in AngularJS" />
+              <div class="projects-overlay">
+                <a class="projects-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/xenoblade-quiz/index.html">
+                  Xenoblade Chronicles Quiz
+                </a>
+                <h3 class="projects-h3">
+                  AngularJS
+                </h3>
+                <a class="projects-btn" href="https://github.com/cdeluna95/xenoblade-quiz" role="button">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-item">
+            <div class="projects-hover">
+              <img class="project img-auto" src="./assets/img/proj/todolist.png" alt="To Do List in AngularJS" />
+              <div class="projects-overlay">
+                <a class="projects-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/todo-list-angular/index.html">
+                  To Do List
+                </a>
+                <h3 class="projects-h3">
+                  AngularJS
+                </h3>
+                <a class="projects-btn" href="https://github.com/cdeluna95/todo-list-angular" role="button">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-item">
+            <div class="projects-hover">
+              <img class="project img-auto" src="./assets/img/proj/youtubelinksharer.png" alt="YouTube Link Sharer in Ruby on Rails" />
+              <div class="projects-overlay">
+                <a class="projects-a" href="https://cdelunamylinks-onrails.herokuapp.com">
+                  YouTube Link Sharer
+                </a>
+                <h3 class="projects-h3">
+                  Ruby on Rails
+                </h3>
+                <a class="projects-btn" href="https://github.com/cdeluna95/mylinks-onrails" role="button">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-item">
+            <div class="projects-hover">
+              <img class="project img-auto" src="./assets/img/proj/visualapp.png" alt="Visual App in Ruby in Ruby on Rails" />
+              <div class="projects-overlay">
+                <a class="projects-a" href="https://cdelunavisualapp.herokuapp.com">
+                  Visual App
+                </a>
+                <h3 class="projects-h3">
+                  Ruby on Rails
+                </h3>
+                <a class="projects-btn" href="https://github.com/cdeluna95/visual_app" role="button">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-item">
+            <div class="projects-hover">
+              <img class="project img-auto" src="./assets/img/proj/superelite.png" alt="Super Elite: Space Adventure! in Java" />
+              <div class="projects-overlay">
+                <a class="projects-a" href="https://github.com/Kenjacau/STARGAME/archive/master.zip">
+                  Super Elite: Space Adventure!
+                </a>
+                <h3 class="projects-h3">
+                  Java
+                </h3>
+                <a class="projects-btn" href="https://github.com/Kenjacau/STARGAME" role="button">
+                  GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        
       </div>
     </section>
     
-    <!-- Projects Carousel -->
-    <section id="page-three">
-      <a id="projects"></a>
-      <!-- Carousel -->
-      <div id="myCarousel" class="carousel slide" data-interval="false">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>
-        <!-- List Box -->
-        <div class="carousel-inner" role="listbox">
-          <!-- Project 1 -->
-          <div class="item active">
-            <div class="carousel-wrapper">
-              <div class="row featurette">
-                <div class="carousel-container">
-                  <div class="col-md-7">
-                    <img class="featurette-image img-responsive center-block" src="images/projects/cheebsite.png" alt="Christan de Luna's personal website">
-                  </div>
-                  <div class="col-md-5">
-                    <h2 class="carousel-title">
-                      Personal Website  
-                    </h2>
-                    <p class="carousel-lang">
-                      HTML, CSS, JavaScript | Bootstrap, jQuery
-                    </p>
-                    <div class="carousel-buttons">
-                      <a class="btn-white" href="http://cdeluna95.github.io" role="button">Link</a>
-                      <a class="btn-black" href="http://github.com/cdeluna95/cdeluna95.github.io" role="button">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="item">
-            <div class="carousel-wrapper">
-              <div class="row featurette">
-                <div class="carousel-container">
-                  <div class="col-md-7">
-                    <img class="featurette-image img-responsive center-block" src="images/projects/todolist.png" alt="To Do List by Christan de Luna">
-                  </div>
-                  <div class="col-md-5">
-                    <h2 class="carousel-title">
-                      To Do List 
-                    </h2>
-                    <p class="carousel-lang">
-                      HTML, JavaScript
-                    </p>
-                    <div class="carousel-buttons">
-                      <a class="btn-white" href="http://walnut-beak.hyperdev.space" role="button">Link</a>
-                      <a class="btn-black" href="http://github.com/cdeluna95/todo-list" role="button">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="item">
-            <div class="carousel-wrapper">
-              <div class="row featurette">
-                <div class="carousel-container">
-                  <div class="col-md-7">
-                    <img class="featurette-image img-responsive center-block" src="images/projects/youtubelinksharer.png" alt="YouTube Link Sharer by Christan de Luna">
-                  </div>
-                  <div class="col-md-5">
-                    <h2 class="carousel-title">
-                      YouTube Link Sharer
-                    </h2>
-                    <p class="carousel-lang">
-                      Ruby on Rails
-                    </p>
-                    <div class="carousel-buttons">
-                      <a class="btn-white" href="http://cdelunamylinks-onrails.herokuapp.com" role="button">Link</a>
-                      <a class="btn-black" href="http://github.com/cdeluna95/mylinks-onrails" role="button">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="item">
-            <div class="carousel-wrapper">
-              <div class="row featurette">
-                <div class="carousel-container">
-                  <div class="col-md-7">
-                    <img class="featurette-image img-responsive center-block" src="images/projects/visualapp.png" alt="Visual App by Christan de Luna">
-                  </div>
-                  <div class="col-md-5">
-                    <h2 class="carousel-title">
-                      Visual App
-                    </h2>
-                    <p class="carousel-lang">
-                      Ruby on Rails
-                    </p>
-                    <div class="carousel-buttons">
-                      <a class="btn-white" href="http://cdelunavisualapp.herokuapp.com" role="button">Link</a>
-                      <a class="btn-black" href="http://github.com/cdeluna95/visual_app" role="button">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Project 5 -->
-          <div class="item">
-            <div class="carousel-wrapper">
-              <div class="row featurette">
-                <div class="carousel-container">
-                  <div class="col-md-7">
-                    <img class="featurette-image img-responsive center-block" src="images/projects/superelitespaceadventure.png" alt="Super Elite: Space Adventure by
-                    Christan de Luna, Joshua Broughton, Kenny Cauthen, and Travis Keating">
-                  </div>
-                  <div class="col-md-5">
-                    <h2 class="carousel-title">
-                      Super Elite: Space Adventure!
-                    </h2>
-                    <p class="carousel-lang">
-                      Java
-                    </p>
-                    <div class="carousel-buttons">
-                      <a class="btn-black" href="http://github.com/Kenjacau/STARGAME" role="button">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- List Box -->
-        <!-- Arrows -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div><!-- myCarousel -->
-    </section>
-    
     <!-- Gallery -->
-    <section id="page-four">
-      <div class="container">
-        <div class="gallery-wrapper">
-          <!-- Web Designs -->
-          <a id="design"></a>
-          <div class="design-images">
-            <!-- Row 1 -->
-            <div class="row">
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/designs/chemlearngame.png" alt="Chemistry learning game">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/designs/astromeet.png" alt="Astromeet design prototype">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/designs/cheebsiteold.png" alt="Christan de Luna's old personal website">
-              </div>
-            </div>
-            <!-- Row 2 -->
-            <div class="row">
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/designs/pacifictrails.png" alt="Pacific Trails Resort for Web Technologies">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/designs/trillium.png" alt="Trillium Media Design for Web Technologies">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/designs/casitasedona.png" alt="Casita Sedona for Web Technologies">
-              </div>
-            </div>
-          </div>
-          <!-- Xenoblade Chronicles X -->
-          <a id="xenoblade"></a>
-          <div class="xenoblade-images">
-            <!-- Row 1 -->
-            <div class="row">
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/xenoblade/infernonla.jpg" alt="Xenoblade Chronicles X: Inferno at NLA">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/xenoblade/noctilumformula.jpg" alt="Xenoblade Chronicles X: Formula at Noctilum">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/xenoblade/divineformula.jpg" alt="Xenoblade Chronicles X: Formula at Divine Roost">
-              </div>
-            </div>
-            <!-- Row 2 -->
-            <div class="row">
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/xenoblade/obliviaformula.jpg" alt="Xenoblade Chronicles X: Formula at Oblivia">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/xenoblade/whitewoodformula.jpg" alt="Xenoblade Chronicles X: Formula at Weeping Whitewood">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive" src="images/xenoblade/sylvalumformula.jpg" alt="Xenoblade Chronicles X: Formula at Sylvalum">
+    <section id="gallery">
+      <div class="gallery-wrapper">
+        
+        <div class="gallery-title-wrapper">
+          <h2 class="gallery-title">
+            Gallery
+          </h2>
+        </div>
+        
+        <hr class="gallery-line" />
+        
+        <div class="gallery-btns">
+          <ul class="gallery-btns-ul">
+            <li class="gallery-btns-li">
+              <a class="gallery-btns-a btn-imgur" href="http://ch33bdragonite.imgur.com/" role="button">
+                Imgur
+              </a>
+              <a class="gallery-btns-a btn-tinypic" href="http://tinypic.com/ch33bdragonite" role="button">
+                TinyPic
+              </a>
+              <a class="gallery-btns-a btn-colors" href="http://colorslive.com/artist/Ch33bDragonite" role="button">
+                Colors!
+              </a>
+              <a class="gallery-btns-a btn-brawlvault" href="http://forums.kc-mm.com/Gallery/BrawlView.php?ByUserID=2958" role="button">
+                BrawlVault
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Web Design -->
+        <div class="gallery-flex">
+          <div class="web-item">
+            <div class="web-hover">
+              <img class="web img-auto" src="./assets/img/web/webdevregular.png" alt="ITEC 4450 Homepage in Bootstrap" />
+              <div class="web-overlay">
+                <a class="web-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/webdev-home/regular/index.html">
+                  ITEC 4450 Homepage
+                </a>
               </div>
             </div>
           </div>
-          <!-- Super Smash Bros. Brawl -->
-          <a id="brawl"></a>
-          <div class="brawl-images">
-            <!-- Row 1 -->
-            <div class="row">
-              <div class="col-md-4">
-                <img class="img-responsive center-block" src="images/brawl/latiaosclimbers.jpg" alt="Super Smash Bros. Brawl: Latiaos Climbers">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive center-block" src="images/brawl/kewlkirby.jpg" alt="Super Smash Bros. Brawl: Kewl Kirby">
-              </div>
-              <div class="col-md-4">
-                <img class="img-responsive center-block" src="images/brawl/1600dressedpeach.jpg" alt="Super Smash Bros. Brawl: 1600 Dressed Peach">
+          
+          <div class="web-item">
+            <div class="web-hover">
+              <img class="web img-auto" src="./assets/img/web/mylandingpage.png" alt="Simple Landing Page in SASS" />
+              <div class="web-overlay">
+                <a class="web-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/my-landing-page/index.html">
+                  Simple Landing Page
+                </a>
               </div>
             </div>
-            <!-- Row 2 -->
-            <div class="row">
-              <div class="col-md-4">
-                <img class="img-responsive center-block" src="images/brawl/missingnotoonlink.jpg" alt="Super Smash Bros. Brawl: Missingno. Toon Link">
+          </div>
+          
+          <div class="web-item">
+            <div class="web-hover">
+              <img class="web img-auto" src="./assets/img/web/astromeet.png" alt="Twnkle Template in HTML, CSS, jQuery" />
+              <div class="web-overlay">
+                <a class="web-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/astromeet-design/index.html">
+                  Twnkle Template
+                </a>
               </div>
-              <div class="col-md-4">
-                <img class="img-responsive center-block" src="images/brawl/fortunezelda.jpg" alt="Super Smash Bros. Brawl: Fortune Zelda">
+            </div>
+          </div>
+          
+          <div class="web-item">
+            <div class="web-hover">
+              <img class="web img-auto" src="./assets/img/web/chemlearngame.png" alt="Chemistry Learning Game Template in Bootstrap" />
+              <div class="web-overlay">
+                <a class="web-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/chem-learn-game/index.html">
+                  Chemistry Learning Game Template
+                </a>
               </div>
-              <div class="col-md-4">
-                <img class="img-responsive center-block" src="images/brawl/darkmetaknight.jpg" alt="Super Smash Bros. Brawl: Dark Meta Knight">
+            </div>
+          </div>
+          
+          <div class="web-item">
+            <div class="web-hover">
+              <img class="web img-auto" src="./assets/img/web/trilliummedia.png" alt="Trillium Media Design in Bootstrap" />
+              <div class="web-overlay">
+                <a class="web-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/trillium/index.html">
+                  Trillium Media Design
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="web-item">
+            <div class="web-hover">
+              <img class="web img-auto" src="./assets/img/web/casitasedona.png" alt="Casita Sedona in Bootstrap" />
+              <div class="web-overlay">
+                <a class="web-a" href="https://preview.c9users.io/cdeluna95/itec2130-fall2016/casita-sedona/casita.html">
+                  Casita Sedona
+                </a>
               </div>
             </div>
           </div>
         </div>
+        
+        <hr class="gallery-line" />
+        
+        <!-- Xenoblade Chronicles X -->
+        <div class="gallery-flex">
+          <div class="xeno-item">
+            <div class="xeno-hover">
+              <img class="xeno img-auto" src="./assets/img/xeno/primordiaformula.jpg" alt="Xenoblade Chronicles X - Formula Skell in Primordia" />
+              <div class="xeno-overlay">
+                <h3 class="xeno-h3">
+                  Primordia Borealis
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="xeno-item">
+            <div class="xeno-hover">
+              <img class="xeno img-auto" src="./assets/img/xeno/noctilumcross.jpg" alt="Xenoblade Chronicles X - Cross in Noctilum" />
+              <div class="xeno-overlay">
+                <h3 class="xeno-h3">
+                  Noctilum Luminescence
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="xeno-item">
+            <div class="xeno-hover">
+              <img class="xeno img-auto" src="./assets/img/xeno/divineformula.jpg" alt="Xenoblade Chronicles X - Formula Skell in Divine Roost" />
+              <div class="xeno-overlay">
+                <h3 class="xeno-h3">
+                  Divine Roost Summit
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="xeno-item">
+            <div class="xeno-hover">
+              <img class="xeno img-auto" src="./assets/img/xeno/obliviaformula.jpg" alt="Xenoblade Chronicles X - Formula Skell in Oblivia" />
+              <div class="xeno-overlay">
+                <h3 class="xeno-h3">
+                  Oblivia Ring
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="xeno-item">
+            <div class="xeno-hover">
+              <img class="xeno img-auto" src="./assets/img/xeno/sylvalumcross.jpg" alt="Xenoblade Chronicles X - Cross in Sylvalum" />
+              <div class="xeno-overlay">
+                <h3 class="xeno-h3">
+                  Sylvalum Noctilucent Sphere
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="xeno-item">
+            <div class="xeno-hover">
+              <img class="xeno img-auto" src="./assets/img/xeno/corecross.jpg" alt="Xenoblade Chronicles X - Cross at the Core" />
+              <div class="xeno-overlay">
+                <h3 class="xeno-h3">
+                  Noctilum Silhouette
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="gallery-line" />
+        
+        <!-- Super Smash Bros. Brawl -->
+        <div class="gallery-flex">
+          <div class="ssbb-item">
+            <div class="ssbb-hover">
+              <img class="ssbb img-auto" src="./assets/img/ssbb/chainbowser.jpg" alt="Super Smash Bros. Brawl - Hakan Bowser Texture" />
+              <div class="ssbb-overlay">
+                <h3 class="ssbb-h3">
+                  Hakan Bowser
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ssbb-item">
+            <div class="ssbb-hover">
+              <img class="ssbb img-auto" src="./assets/img/ssbb/missingnotoonlink.jpg" alt="Super Smash Bros. Brawl - Possessed Toon Link Texture" />
+              <div class="ssbb-overlay">
+                <h3 class="ssbb-h3">
+                  Possessed Toon Link
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ssbb-item">
+            <div class="ssbb-hover">
+              <img class="ssbb img-auto" src="./assets/img/ssbb/fortunezelda.jpg" alt="Super Smash Bros. Brawl - Yuna Zelda Texture" />
+              <div class="ssbb-overlay">
+                <h3 class="ssbb-h3">
+                  Yuna Zelda
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ssbb-item">
+            <div class="ssbb-hover">
+              <img class="ssbb img-auto" src="./assets/img/ssbb/kewlkirby.jpg" alt="Super Smash Bros. Brawl - D00d Kirby Texture" />
+              <div class="ssbb-overlay">
+                <h3 class="ssbb-h3">
+                  D00d Kirby
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ssbb-item">
+            <div class="ssbb-hover">
+              <img class="ssbb img-auto" src="./assets/img/ssbb/darkmetaknight.jpg" alt="Super Smash Bros. Brawl - Dark Meta Knight Texture" />
+              <div class="ssbb-overlay">
+                <h3 class="ssbb-h3">
+                  Dark Meta Knight
+                </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ssbb-item">
+            <div class="ssbb-hover">
+              <img class="ssbb img-auto" src="./assets/img/ssbb/latiaosclimbers.jpg" alt="Super Smash Bros. Brawl - Lati@s Climbers Texture" />
+              <div class="ssbb-overlay">
+                <h3 class="ssbb-h3">
+                  Lati@s Climbers
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- About -->
+    <section id="about">
+      <div class="about-wrapper">
+        
+        <div class="about-title-wrapper">
+          <h2 class="about-title">
+            About
+          </h2>
+        </div>
+        
+        <hr class="about-line" />
+        
+        <div class="about-flex">
+          <div class="about-img-wrapper">
+            <div class="about-hover">
+              <img class="cheeb-img img-auto" src="./assets/img/cheeb.png" alt="Primary photo of Christan de Luna" />
+              <div class="about-overlay">
+                <img class="cheeb-img-2 img-auto" src="./assets/img/cheeb2.png" alt="Secondary photo of Christan de Luna" />
+                <span class="about-icon">
+                  <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-desc">
+            <p class="about-p">
+              Hi, I&#39;m <span class="about-name">Christan</span>! I&#39;m currently a senior at <span class="about-ggc">Georgia Gwinnett College</span> 
+              studying Software Development. I&#39;m a highly driven and aspiring software developer always looking for ways to sharpen my knowledge, 
+              skills, and abilities in the field of web development and design. While my passion remains in the front-end focused on user interface and 
+              user experience design, I&#39;d also love to go the full-stack route as well. I want to learn the best coding practices and transform them 
+              into the industry-standard, as well as give myself exposure to a professional environment. When I&#39;m not coding, you'll see me 
+              binge-watching videos, making drawings or sketches, immersing myself into the world of video games, or working out!
+            </p>
+            <div class="about-qlty">
+              <span class="qlty-span">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <h3 class="qlty-h3">
+                  Front-End Mindset
+                </h3>
+              </span>
+              <span class="qlty-span">
+                <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                <h3 class="qlty-h3">
+                  Graphic Design
+                </h3>
+              </span>
+              <span class="qlty-span">
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <h3 class="qlty-h3">
+                  Gaming
+                </h3>
+              </span>
+              <span class="qlty-span">
+                <i class="fa fa-hand-grab-o" aria-hidden="true"></i>
+                <h3 class="qlty-h3">
+                  Fitness
+                </h3>
+              </span>
+            </div>
+          </div>
+        </div>
+          
       </div>
     </section>
     
     <!-- Contact -->
-    <section id="page-five">
-      <a id="contact"></a>
-      <div class="container">
-        <div class="contact-wrapper">
-          <div class="contact-up">
-            <a href="#header"><i class="fa fa-hand-o-up"></i></a>
-          </div>
-          <div class="contact-title">
-            <h2>Let's Connect!</h2>
-          </div>
+    <section id="contact">
+      <div class="contact-wrapper">
+        
+        <div class="contact-desc">
           <div class="contact-links">
-            <a href="http://linkedin.com/in/christan-de-luna"><i class="fa fa-linkedin"></i></a>
-            <a href="http://twitter.com/ch33bdragonite"><i class="fa fa-twitter"></i></a>
-            <a href="http://github.com/cdeluna95"><i class="fa fa-github"></i></a>
-            <a href="mailto:cjdeluna95@gmail.com"><i class="fa fa-envelope"></i></a>
+            <ul class="contact-links-ul">
+              <li class="contact-links-li">
+                <a class="contact-links-a" href="#header">
+                  Home
+                </a>
+              </li>
+              <li class="contact-links-li">
+                <a class="contact-links-a" href="#projects">
+                  Projects
+                </a>
+              </li>
+              <li class="contact-links-li">
+                <a class="contact-links-a" href="#gallery">
+                  Gallery
+                </a>
+              </li>
+              <li class="contact-links-li">
+                <a class="contact-links-a" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="contact-links-li">
+                <a class="contact-links-a" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>    
+          
+          <div class="contact-icons">
+            <ul class="contact-icons-ul">
+              <li class="contact-icons-li">
+                <a class="contact-icons-a" href="https://linkedin.com/in/christan-de-luna">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="contact-icons-li">
+                <a class="contact-icons-a" href="https://twitter.com/ch33bdragonite">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="contact-icons-li">
+                <a class="contact-icons-a" href="https://www.youtube.com/user/ShinyDragonite11">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="contact-icons-li">
+                <a class="contact-icons-a" href="https://github.com/cdeluna95">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="contact-icons-li">
+                <a class="contact-icons-a" href="./assets/docs/de_luna_christan_resume.pdf">
+                  <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="contact-icons-li">
+                <a class="contact-icons-a" href="mailto:cjdeluna95@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
       </div>
     </section>
     
     <!-- Footer -->
-    <footer id="page-six">
-      <a id="footer"></a>
-      <div class="container">
-        <div class="footer-wrapper">
-          <small class="footer-info">
-            By Christan de Luna. Site under construction.
+    <footer id="footer">
+      <div class="footer-wrapper">
+        
+        <div class="footer-desc">
+          <small class="footer-small">
+            Crafted by Christan de Luna.
           </small>
-        </div>    
+        </div>
+        
       </div>
     </footer>
     
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Bootstrap JS, Font Awesome JS, External JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/efd75aa873.js"></script>
-    <script src="function.js"></script>
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./assets/js/app.min.js"></script>
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
+      
       ga('create', 'UA-84736266-1', 'auto');
       ga('send', 'pageview');
     </script>
