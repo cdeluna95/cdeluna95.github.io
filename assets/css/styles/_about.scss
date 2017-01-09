@@ -25,7 +25,7 @@
     .about-flex {
       margin: 45px 30px;
       @extend %flex-row;
-      @include deviceBreak('max-width: 1260px') {
+      @include deviceBreak("max-width: 1260px") {
         flex-direction: column;
         margin: 45px 0;
       }
@@ -111,7 +111,7 @@
           display: inline;
           line-height: 200%;
           @include textStyle(rgba($black, 0.75), $lato, 1.25rem, null, null, null, null, 0 0 1px rgba($black, 0.1), null);
-          @include deviceBreak('max-width: 1260px') {
+          @include deviceBreak("max-width: 1260px") {
             display: inline-block;
           }
           
@@ -135,7 +135,7 @@
             margin: 5px;
             padding: 20px;
             @include flexItemLayout($grow: 1, $shrink: 1, $basis: 40%);
-            @include deviceBreak('max-width: 1260px') {
+            @include deviceBreak("max-width: 1260px") {
               flex-basis: 100%;
             }
             

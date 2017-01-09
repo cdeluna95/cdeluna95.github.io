@@ -74,7 +74,7 @@
       height: 100%;
       margin: 0 -150px 0 0;
       @extend %regular-ease;
-      @include bgProps(rgba($white, 0.5), rgba($white, 0.7), ('../img/bg/zbow2.jpg'), center center, cover, no-repeat, null);
+      @include bgProps(rgba($white, 0.5), rgba($white, 0.7), ("../img/bg/zbow2.jpg"), center center, cover, no-repeat, null);
       @include posLayout(fixed, $top: 0, $right: 0);
       
       .nav-ul {

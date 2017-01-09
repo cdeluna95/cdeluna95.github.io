@@ -4,7 +4,7 @@
 #header {
   height: 100%;
   @extend %regular-ease;
-  @include bgProps(rgba($black, 0.5), rgba($black, 0.3), ('../img/bg/zbow.jpg'), center center, cover, no-repeat, fixed);
+  @include bgProps(rgba($black, 0.5), rgba($black, 0.3), ("../img/bg/zbow.jpg"), center center, cover, no-repeat, fixed);
   @include deviceBreak(medium) {
     background-attachment: scroll;
   }
@@ -12,19 +12,19 @@
   .header-wrapper {
     max-width: 90%;
     @include posLayout(absolute, $top: 30%, $left: 5%);
-    @include deviceBreak('max-width: 550px') {
+    @include deviceBreak("max-width: 550px") {
       top: 32.5%;
     }
     
     .header-name-wrapper {
-      @include deviceBreak('max-width: 825px') {
+      @include deviceBreak("max-width: 825px") {
         text-align: center;
       }
       
       .header-name {
         display: inline;
         @include textStyle(rgba($white, 0.75), $megrim, 5rem, 900, italic, null, null, 2px 2px 5px rgba($black, 0.5), 10px);
-        @include deviceBreak('max-width: 825px') {
+        @include deviceBreak("max-width: 825px") {
           font-size: calc(5rem / 1.75);
         }
       }
@@ -40,7 +40,7 @@
       .header-role {
         display: inline;
         @include textStyle(rgba($white, 0.75), $megrim, 2.5rem, 900, italic, null, null, 1px 1px 2.5px rgba($black, 0.5), 5px);
-        @include deviceBreak('max-width: 825px') {
+        @include deviceBreak("max-width: 825px") {
           font-size: calc(2.5rem / 1.75);
         }
         
