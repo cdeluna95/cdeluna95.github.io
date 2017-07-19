@@ -88,7 +88,7 @@
                 }
               }
               
-              $social-media: ("linkedin": $linkedin, "twitter": $twitter, "youtube-play": $youtube, "github": $github, "file-pdf-o": $pdf, "envelope": $google);
+              $social-media: ("linkedin": $linkedin, "twitter": $twitter, "youtube-play": $youtube, "github": $github, "codepen": $codepen, "file-pdf-o": $pdf, "envelope": $google);
               
               @each $fa-icon, $social-color in $social-media {
                 .fa-#{$fa-icon} {
